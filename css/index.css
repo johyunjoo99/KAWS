@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 에스코어드림 Reg */
+
+@font-face {
+    font-family: 'KOHIBaeumOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* KOHI배움체 */
+
+
+#wrap{width: 100%; height: auto;}
+
+/* header */
+header{width: 100%; height: 84px;
+       background-color: blanchedalmond;}
+#header_box{width: 1280px; height: 84px; margin: 0 auto;
+            background-color: oldlace; 
+            display: flex; justify-content: space-between;
+            align-items: center;}
+
+
+nav{width: 700px; height: 60px;
+    background-color: aquamarine; 
+    display: flex; justify-content: space-around; align-items: center;}
+
+nav ul{width: 300px; height: 40px;
+       display: flex; justify-content: space-around; align-items: center;}
+nav ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 14px;}
+
+
+/* slider */
+#slider{width: 1280px; height: 360px; margin: 0 auto;
+        background-color: cornflowerblue;}
+#slider h2{font-family: 'KOHIBaeumOTF'; font-size: 40px;}
+
+
+/* 작품 종류 */
+#work_type{width: 1280px; height: 410px; margin: 0 auto;
+           background-color: lightsalmon;}
+
+
+/* 작품의 스타일이나 특징 */
+#work_style{width: 1280px; height: 800px; margin: 0 auto;
+            background-color: tan;}
+#character{width: 1160px; height: 410px; background-color: azure;}
+#signature{width: 1160px; height: 310px; background-color: azure;}
+
+
+/* 작품 슬라이드 */
+#work_slider{width: 1280px; height: 600px; margin: 0 auto;
+             background-color: darkseagreen;}
+
+
+
+#work_roadmap{width: 1280px; height: 830px; margin: 0 auto;
+              background-color: lavender;}
+
+
+/* 그 외의 작품 소개 */
+#work_introduce{width: 1280px; height: 540px; margin: 0 auto;
+                background-color: lightskyblue;}
+
+
+/* FAQ */
+#question{width: 1280px; height: 400px; margin: 0 auto;
+          background-color: papayawhip;}
+      
+/* 로그인..? */
+#join{width: 1280px; height: 60px; margin: 0 auto;
+      background-color: lightsteelblue;}
+
+footer{width: 1280px; height: 280px; margin: 0 auto;
+       background-color: khaki;}
