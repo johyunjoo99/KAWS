@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="css/commom.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="javascript/index.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -25,10 +28,10 @@
                     </ul>
 
                     <ul id="sns_navi">
-                        <li><a href="#">트위터</a></li>
-                        <li><a href="#">인스타그램</a></li>
-                        <li><a href="#">페이스북</a></li>
-                        <li><a href="#">유튜브</a></li>
+                        <li><a href="#"><img src="img/index_img/twitter.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="img/index_img/instargram.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="img/index_img/facebook.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/index_img/youtube.png" alt="유튜브"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,15 +40,66 @@
         
         <!-- slider -->
         <div id="slider">
-            <h2>A COLLECTION OF <br>
-                KAWS FIGURE </h2>
-            <p></p>
+            <div id="slider_text">
+                    <h2>
+                        A COLLECTION OF <br>
+                        KAWS FIGURE 
+                    </h2>
+                    <p>
+                        Meet the collection of figures <br>
+                        by pop artist KAWS.
+                    </p>
+            </div>
+
+            <div id="slider_img">
+                <ul class="slider_slide">
+                    <li><img src="img/index_img/slider6.jpg" alt="chum1"></li>
+                    <li><img src="img/index_img/slider5.jpg" alt="collabo1"></li>
+                    <li><img src="img/index_img/slider4.jpg" alt="companion3"></li>
+                    <li><img src="img/index_img/slider3.jpg" alt="companion2"></li>
+                    <li><img src="img/index_img/slider2.jpg" alt="BFF1"></li>
+                    <li><img src="img/index_img/slider1.jpg" alt="companion1"></li>
+                </ul>
+            </div>
         </div>
 
 
         <!-- 작품의 종류 -->
         <div id="work_type">
+            <h2>MASTERPIECE</h2>
+            <div class="masterpiece">
+                <div id="companion">
+                    <img src="img/index_img/type1.png" alt="companion2">
+                    <h4>Companion</h4>
+                    <p>
+                        Kaws' representative character <br>
+                        expresses a metaphor <br>
+                        for the inner side of <br>
+                        a lonely and tired modern man
+                    </p>
+                </div>
 
+                <div id="bff">
+                    <img src="img/index_img/type2.png" alt="BFF2">
+                    <h4>BFF</h4>
+                    <p>
+                        It is a character <br>
+                        that means "best friend forever" <br>
+                        and is made by borrowing <br>
+                        the gloves and shoes of the COMPANION.
+                    </p>
+                </div>
+
+                <div id="accomplice">
+                    <img src="img/index_img/type3.png" alt="Chum2">
+                    <h4>Accomplice</h4>
+                    <p>
+                        It is a character created by combining <br>
+                        the gloomy modern person's appearance <br>
+                        and childhood.
+                    </p>
+                </div>
+            </div>
         </div>
 
 

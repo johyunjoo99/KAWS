@@ -7,43 +7,96 @@
 /* 에스코어드림 Reg */
 
 @font-face {
-    font-family: 'KOHIBaeumOTF';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-/* KOHI배움체 */
+/* GmarketSansLight */
+
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Gmarket Sans M */
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Gmarket Sans B */
 
 
 #wrap{width: 100%; height: auto;}
 
 /* header */
-header{width: 100%; height: 84px;
-       background-color: blanchedalmond;}
+header{width: 100%; height: 84px; background-color: #5b5652;
+       position: fixed; top: 0; left: 0; z-index: 30;
+       border-bottom: 1px solid #cabead;}
 #header_box{width: 1280px; height: 84px; margin: 0 auto;
-            background-color: oldlace; 
+            background-color: #5b5652; 
             display: flex; justify-content: space-between;
             align-items: center;}
 
 
-nav{width: 700px; height: 60px;
-    background-color: aquamarine; 
+nav{width: 700px; height: 60px; 
     display: flex; justify-content: space-around; align-items: center;}
 
-nav ul{width: 300px; height: 40px;
+nav ul li a{padding: 30px;}
+
+nav #navi{width: 300px; height: 40px;
        display: flex; justify-content: space-around; align-items: center;}
-nav ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 14px;}
+nav #navi li a{font-family: 'S-CoreDream-4Regular'; font-size: 16px;
+                color: #eaeaed;}
+
+nav #sns_navi{width: 200px; height: 40px;
+              display: flex; 
+              justify-content: space-between; align-items: center;}
 
 
 /* slider */
-#slider{width: 1280px; height: 360px; margin: 0 auto;
-        background-color: cornflowerblue;}
-#slider h2{font-family: 'KOHIBaeumOTF'; font-size: 40px;}
+#slider{width: 1280px; height: 500px; margin: 0 auto;
+        padding: 150px 0px 0px 0px;
+        display: flex; 
+        justify-content: space-between; align-items: center;}
+
+#slider_text{width: 500px; height: 400px;
+             display: flex; 
+             flex-direction: column;}
+#slider_text h2{font-family: 'GmarketSansBold'; font-weight: bold;
+                font-size: 45px; color: #fff;
+                padding-top: 16%;}
+#slider_text p{font-family: 'GmarketSansMedium'; font-size: 20px;
+               color: #fff; padding-top: 2%;}
+
+#slider_img{width: 580px; height: 400px;}
+#slider_img ul li{position: absolute;}
+#slider_img ul li img{width: 580px; height: 380px; border-radius: 30px;}
 
 
 /* 작품 종류 */
 #work_type{width: 1280px; height: 410px; margin: 0 auto;
-           background-color: lightsalmon;}
+           padding: 8% 0;}
+#work_type h2{text-align: center; font-size: 30px; color: #fff;
+              font-family: 'GmarketSansMedium'; padding-bottom: 50px;}
+
+.masterpiece{display: flex; 
+             justify-content: space-around; align-items: center;}
+.masterpiece > div{width: 360px; height: 320px;
+                 background-color: #cabead; border-radius: 30px;}
+.masterpiece > div > img{width: 95px; height: 120px; margin: 8% 0 0 36%;}
+.masterpiece > div > h4{text-align: center; color: #fff;
+                        font-family: 'GmarketSansLight'; font-size: 20px;
+                        padding: 3% 0;}
+.masterpiece > div > p{text-align: center; color: #fff;
+                       font-family: 'GmarketSansLight'; font-size: 12px;}
+
+#bff > img{margin: 8% 0 0 38%;}
 
 
 /* 작품의 스타일이나 특징 */
