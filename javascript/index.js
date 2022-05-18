@@ -13,3 +13,12 @@ function slide(){
 
 setInterval(slide, 300);
 
+//팝업 비디오
+
+function openPopup(){
+    document.getElementById('myModal').style.display = "block";
+}
+
+function closePopup(){
+    document.getElementById('myModal').style.display = "none";
+}

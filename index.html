@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAWS</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="stylesheet" href="css/commom.css">
     <link rel="stylesheet" href="css/index.css">
 
@@ -105,45 +106,97 @@
 
         <!-- 작품의 스타일이나 특징 -->
         <div div id="work_style">
-            <div id="Character">
-
+            <div id="writer">
+                <img src="img/index_img/brian.jpg" alt="브라이언 도넬리">
+                <div id="writer_text">
+                    <h2>Brian Donnelly</h2>
+                    <p>
+                        Andy Warhol in the 21st century.
+                    </p>
+                    <p>
+                        This is what people call Brian Donnelly, <br>
+                        a pop artist and designer from New York, <br>
+                        the United States known as Cowes. <br>
+                    </p>
+                    <p>
+                        The most famous one is the character 'Company', <br>
+                        which made 'X' his symbol.
+                    </p>
+                </div>
             </div>
 
-            <div id="signature">
+            <div id="interview">
+                <div id="interview_text">
+                    <h2>HYPEBEAST: KAWS COMPANION</h2>
+                    <p>
+                        Kaws Companion is a collection of characters <br>
+                        by Kanye West, Travis Scott and Drake.
+                    </p>
+                    <p>
+                        From 100-foot sculptures to 11-inch collections, <br>
+                        you can see them in museums around the world.
+                    </p>
+                    <p>
+                        HYPEBEAST explains why Kaws' iconic Companion character <br>
+                        has been resold for thousands of dollars <br>
+                        and has become today's Mickey Mouse version.
+                    </p>
+                </div>
 
+                <div id="video">
+                    <img src="img/index_img/video.JPG" alt="유튜브 영상" >
+                    <i class="fa-solid fa-play" onclick="openPopup()"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/eSOb8jWw2v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="myIframe"></iframe>
+        </div>
+
+
+        <!-- 작품 슬라이드 -->
+        <div id="work_slider">
+            <h2>THE WORKS OF KAWS</h2>
+            <div class="slide">
+            <ul>
+                <li><img src="img/index_img/work1.jpg" alt="companion4"></li>
+                <li><img src="img/index_img/work2.jpg" alt="bff3"></li>
+                <li><img src="img/index_img/work3.jpg" alt="chum3"></li>
+                <li><img src="img/index_img/work4.jpg" alt="accomplice2"></li>
+                <li><img src="img/index_img/work5.jpg" alt="holiday"></li>
+                <li><img src="img/index_img/work6.jpg" alt="limited"></li>
+            </ul>
             </div>
         </div>
+
+
+        <div id="work_roadmap">
+
+        </div>
+
+
+        <!--그 외의 작품 소개 -->
+        <div id="work_introduce">
+
+        </div>
+
+        <!-- FAQ -->
+        <div id="question">
+
+        </div>
+
+        <!-- 로그인..? -->
+        <div id="join">
+
+        </div>
+
+        <footer>
+            
+        </footer>
     </div>
-
-
-    <!-- 작품 슬라이드 -->
-    <div id="work_slider">
-
-    </div>
-
-
-    <div id="work_roadmap">
-
-    </div>
-
-
-    <!--그 외의 작품 소개 -->
-    <div id="work_introduce">
-
-    </div>
-
-    <!-- FAQ -->
-    <div id="question">
-
-    </div>
-
-    <!-- 로그인..? -->
-    <div id="join">
-
-    </div>
-
-    <footer>
-        
-    </footer>
 </body>
 </html>
