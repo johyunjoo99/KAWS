@@ -1,185 +1,111 @@
-@font-face {
-    font-family: 'S-CoreDream-4Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/* 에스코어드림 Reg */
 
+/* font */
 @font-face {
-    font-family: 'GmarketSansLight';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-}
-/* GmarketSansLight */
-
+    font-style: normal;}
+/* ↑ 민산스 light체 */
 
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-family: 'MinSans-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-}
-/* Gmarket Sans M */
+    font-style: normal;}
+/* ↑ 민산스 Regular체  */
 
 @font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-}
-/* Gmarket Sans B */
-
-
-#wrap{width: 100%; height: auto;}
-
-/* header */
-header{width: 100%; height: 84px; background-color: #5b5652;
-       position: fixed; top: 0; left: 0; z-index: 30;
-       border-bottom: 1px solid #cabead;}
-#header_box{width: 1280px; height: 84px; margin: 0 auto;
-            background-color: #5b5652; 
-            display: flex; justify-content: space-between;
-            align-items: center;}
-
-
-nav{width: 700px; height: 60px; 
-    display: flex; justify-content: space-around; align-items: center;}
-
-nav ul li a{padding: 30px;}
-
-nav #navi{width: 300px; height: 40px;
-       display: flex; justify-content: space-around; align-items: center;}
-nav #navi li a{font-family: 'S-CoreDream-4Regular'; font-size: 16px;
-                color: #eaeaed;}
-
-nav #sns_navi{width: 200px; height: 40px;
-              display: flex; 
-              justify-content: space-between; align-items: center;}
+    font-style: normal;}
+/* ↑ 조선일보명조체 */
 
 
 /* slider */
-#slider{width: 1280px; height: 500px; margin: 0 auto;
-        padding: 150px 0px 0px 0px;
-        display: flex; 
-        justify-content: space-between; align-items: center;}
+#slider{width: 100%; height: 890px; margin: 0 auto; background-color: #1c1c1c;
+        position: relative; overflow: hidden;}
+.slider_ul{width: 7612px;}
+.slider_ul li{width: 1903px;  height: 890px; float: left;}
+.slider_ul li img{width: 100%; height: 100%;}
 
-#slider_text{width: 500px; height: 400px;
-             display: flex; 
-             flex-direction: column;}
-#slider_text h2{font-family: 'GmarketSansBold'; font-weight: bold;
-                font-size: 45px; color: #fff;
-                padding-top: 16%;}
-#slider_text p{font-family: 'GmarketSansMedium'; font-size: 20px;
-               color: #fff; padding-top: 2%;}
+#slider i{position: absolute; top: 50%; display: block;
+     font-size: 70px; color: #E8E8E8;}
 
-#slider_img{width: 580px; height: 400px;}
-#slider_img ul li{position: absolute;}
-#slider_img ul li img{width: 580px; height: 380px; border-radius: 30px;}
+.fa-chevron-left{left: 0; padding: 15px 10px; border-radius: 0 10px 10px 0px; padding:10px;}
+
+.fa-chevron-right{right: 0; padding: 15px 10px; border-radius: 10px 0px 0px 10px; padding:10px;}
+
+#slider i:hover{background: rgba(255,255,255,0.8); color:#000;
+                    transition: all 0.5s ease; cursor: pointer;}
 
 
-/* 작품 종류 */
-#work_type{width: 1280px; height: 410px; margin: 0 auto;
-           padding: 8% 0;}
-#work_type h2{text-align: center; font-size: 40px; color: #fff;
-              font-family: 'GmarketSansLight'; padding-bottom: 50px;}
+/* story */
+#story{width: 100%; height: auto; background-color: #1c1c1c;}
+#story_box{width: 1200px; height: 370px; margin: 0 auto; padding-top: 50px;
+           transition: all 0.5s ease;}
+#story_box2{width: 1100px; height: 270px; margin: 0px 50px 50px 50px; overflow: hidden;
+            background-color: #1c1c1c;}
 
-.masterpiece{display: flex; 
-             justify-content: space-around; align-items: center;}
-.masterpiece > div{width: 360px; height: 320px;
-                 background-color: #cabead; border-radius: 30px;}
-.masterpiece > div > img{width: 95px; height: 120px; margin: 8% 0 0 36%;}
-.masterpiece > div > h4{text-align: center; color: #fff;
-                        font-family: 'GmarketSansLight'; font-size: 20px;
-                        padding: 3% 0;}
-.masterpiece > div > p{text-align: center; color: #fff;
-                       font-family: 'GmarketSansLight'; font-size: 12px;}
-.masterpiece > #accomplice > p{padding-top: 2%;}
+.title{font-family: 'Chosunilbo_myungjo'; font-size: 60px; color: #E8E8E8;
+       display: inline-block; text-align: center; margin: 50px 470px;}
+.line{width: 1000px; height: 20px; margin: 0 auto;
+      border-bottom: 1px solid #E8E8E8;}
 
-#bff > img{margin: 8% 0 0 38%;}
+#story_box2 p{text-align: center; font-family: 'Chosunilbo_myungjo'; font-size: 23px;
+              line-height: 35px; display: inline-block; color: #E8E8E8;}
+#story_box2 p:first-of-type{margin: 20px 130px 15px 130px;}
+#story_box2 p:nth-of-type(2){margin:0px 70px;}
+#story_box2 p:last-of-type{margin: 15px 350px 0px 350px;}
+#story_box2 p span{color: #f37121; font-size: 30px;}
 
+#story_box2 i{font-size: 40px; color: #E8E8E8; display: block; text-align: center;}
+#story_box2 i:first-of-type{margin-top: 30px;  cursor: pointer;}
+#story_box2 i:nth-of-type(2){margin-top: 30px;  cursor: pointer;}
 
-/* 작품의 스타일이나 특징 */
-#work_style{width: 1280px; height: 1000px; margin: 0 auto;
-            display: flex; flex-wrap: wrap; 
-            justify-content: space-around; align-items: center;}
+/* 수상기록 */
+#award{width: 100%; height: 1200px; background-color: #1c1c1c;}
+#award_box{width: 1200px; height: 1200px; margin: 0 auto;
+           background-image: url(../img/index/award_back.png); 
+           background-repeat: no-repeat;}
 
-#writer{width: 1200px; height: 410px; border-radius: 30px; 
-        background-color: #23222a;
-        display: flex; 
-        justify-content: space-around; align-items: center;}
-      
-#writer img{width: 470px; height: 290px; border-radius: 30px;}
-
-#writer_text{width: 450px; height: 230px;}
-#writer_text h2{font-family: 'GmarketSansLight'; color: #fff;
-                font-size: 30px;  font-weight: bold;
-                padding-bottom: 3%;}
-#writer_text p{font-family: 'GmarketSansLight'; color: #fff;
-               padding-bottom: 2%;}
-
-#interview{width: 1200px; height: 310px; 
-           padding: 8% 0; display: flex; 
-           justify-content: space-between; align-items: center;}
-
-#interview #video{position: relative;}
-#interview #video img{width: 470px; height: 264px; border-radius: 30px;}
-#interview #video i{position: absolute; top: 50%; left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 60px; color: #fff;}
-
-#interview_text{width: 570px; height: 240px;}
-#interview_text h2{font-family: 'GmarketSansLight'; color: #fff;
-                   font-size: 30px; font-weight: bold;
-                   padding-bottom: 2%;}
-#interview_text p{font-family: 'GmarketSansLight'; color: #fff;
-                   padding-bottom: 2%;}
-
-/* 팝업 비디오 */
-.modal{width: 100%; height: 100%;
-       position: fixed; top: 0; left: 0; z-index: 30;
-       background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8);
-       overflow: auto; display: none;}
-
-#myModal iframe{width: 1280px; height: 719px;
-                position: absolute; top: 50%; left: 50%;
-                transform: translate(-50%, -50%);}
-#myModal i{font-size: 40px; color: #fff;
-           position: absolute; top: 5%; right: 5%;}
+#award_box ul li{color: #E8E8E8; text-align: center; font-family: 'MinSans-Regular';
+                 font-size: 20px; line-height: 30px; margin: 0px 0px 30px 0px;}
 
 
+/* SUB 페이지로 이동 */
+#subpage{width: 100%; height:  350px; background-color: #1c1c1c;}
+#subpage_box{width: 1200px; height: 350px; margin: 0 auto;
+             display: flex; justify-content: space-around; align-items: center;}
 
-/* 작품 슬라이드 */
-#work_slider{width: 1280px; height: 600px; margin: 0 auto;
-             background-color: darkseagreen;
-             display: flex; flex-direction: column;
-             justify-content: space-around; align-items: center;}
-#work_slider h2{text-align: center; font-family: 'GmarketSansLight';
-                font-size: 40px; color: #fff;}
-#work_slider ul{width: 1070px; height: 390px; overflow: hidden;}
-#work_slider ul li{float: left; margin: 0 2%;}
-#work_slider ul li img{border-radius: 30px;}
+#introduce_box{width: 550px; height: 250px;
+               /* border-top: 2px solid #333333; border-bottom: 2px solid #333333; */
+               background-image: url(../img/index/sub_img.png);
+               background-repeat: no-repeat;}
+#intro_textbox{float: right;}
 
+#intro_textbox p{font-family: 'Chosunilbo_myungjo'; text-align: center; 
+                 font-size: 20px; line-height: 22px; color: #E8E8E8;}
+#intro_textbox #intro_text1{margin: 32px 40px 10px 0px;}
+#intro_textbox #intro_text2{margin: 10px 30px 20px 0px;}
 
+#intro_textbox a{font-family: 'MinSans-Regular'; 
+                 font-size: 18px; margin: 20px 0px 0px 70px; color: #E8E8E8;
+                 cursor: pointer;}
 
+#picture_box {width: 550px; height: 250px;
+              /* border-top: 2px solid #333333; border-bottom: 2px solid #333333; */
+              background-image: url(../img/index/sub_img2.png);
+              background-repeat: no-repeat;}
+#pic_textbox{float: right;}
 
-#work_roadmap{width: 1280px; height: 830px; margin: 0 auto;
-              background-color: lavender;}
+#pic_textbox p{font-family: 'Chosunilbo_myungjo'; text-align: center; 
+               font-size: 20px; line-height: 22px; color: #E8E8E8;}
+#pic_textbox #pic_text1{margin: 48px 40px 10px 0px;}
+#pic_textbox #pic_text2{margin: 10px 30px 20px 0px;}
 
+#pic_textbox a{font-family: 'MinSans-Regular'; font-size: 18px; 
+               margin: 20px 0px 0px 58px; color: #E8E8E8;
+               cursor: pointer;}
 
-/* 그 외의 작품 소개 */
-#work_introduce{width: 1280px; height: 540px; margin: 0 auto;
-                background-color: lightskyblue;}
-
-
-/* FAQ */
-#question{width: 1280px; height: 400px; margin: 0 auto;
-          background-color: papayawhip;}
-      
-/* 로그인..? */
-#join{width: 1280px; height: 60px; margin: 0 auto;
-      background-color: lightsteelblue;}
-
-footer{width: 1280px; height: 280px; margin: 0 auto;
-       background-color: khaki;}
+#intro_textbox a:hover, #pic_textbox a:hover{color: #f37121; transition: all 0.3s;}

@@ -4,199 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAWS</title>
+    <title>JOKER</title>
 
+    <link rel="icon" href="img/index/dc_logo_2.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
-    <link rel="stylesheet" href="css/commom.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="javascript/index.js"></script>
+
 </head>
 <body>
-    <div id="wrap">
-
-        <!-- header -->
         <header>
-            <div id="header_box">
-                <a href="#"><img src="img/index_img/kaws_logo.png" alt="logo"></a>
-                <nav>
-                    <ul id="navi">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-
-                    <ul id="sns_navi">
-                        <li><a href="#"><img src="img/index_img/twitter.png" alt="트위터"></a></li>
-                        <li><a href="#"><img src="img/index_img/instargram.png" alt="인스타그램"></a></li>
-                        <li><a href="#"><img src="img/index_img/facebook.png" alt="페이스북"></a></li>
-                        <li><a href="#"><img src="img/index_img/youtube.png" alt="유튜브"></a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <ul id="nav_ul">
+                    <li><a href="index.html"><img src="img/index/dc_logo.png" alt="DC 로고"></a></li>
+                    <li><a href="sub1.html">인물 소개</a></li>
+                    <li><a href="sub2.html">예고편 및 평점</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </nav>  
         </header>
 
-        
-        <!-- slider -->
-        <div id="slider">
-            <div id="slider_text">
-                    <h2>
-                        A COLLECTION OF <br>
-                        KAWS FIGURE 
-                    </h2>
-                    <p>
-                        Meet the collection of figures <br>
-                        by pop artist KAWS.
-                    </p>
+    <!-- slider -->
+        <div>
+            <div id="slider">
+                    <ul class="slider_ul">
+                        <li><img src="img/index/slider1.jpg" alt="조커1"></li>
+                        <li><img src="img/index/slider2.jpg" alt="조커2"></li>
+                        <li><img src="img/index/slider3.jpg" alt="조커3"></li>
+                        <li><img src="img/index/slider4.jpg" alt="조커4"></li>
+                    </ul>
+                    <div>
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
             </div>
 
-            <div id="slider_img">
-                <ul class="slider_slide">
-                    <li><img src="img/index_img/slider6.jpg" alt="chum1"></li>
-                    <li><img src="img/index_img/slider5.jpg" alt="collabo1"></li>
-                    <li><img src="img/index_img/slider4.jpg" alt="companion3"></li>
-                    <li><img src="img/index_img/slider3.jpg" alt="companion2"></li>
-                    <li><img src="img/index_img/slider2.jpg" alt="BFF1"></li>
-                    <li><img src="img/index_img/slider1.jpg" alt="companion1"></li>
-                </ul>
+        </div>
+    <div id="story">
+        <div id="story_box">
+            <div id="story_box2">
+                <div class="title">STORY</div>
+                <div class="line"></div>
+
+                <i class="fa-solid fa-angle-down"></i>
+                <p>
+                    "I used to think that my life was a tragedy... but now I realize, it's a fucking comedy." <br>
+                    난 지금까지 내 인생이 비극인 줄 알았는데... 알고 보니 뭣같은 코미디더라고.
+                </p>
+
+                <p>
+                    고담시의 광대 아서 플렉은 코미디언을 꿈꾸는 남자. <br>
+                    하지만 모두가 미쳐가는 코미디 같은 세상에서 맨 정신으로는 그가 설 자리가 없음을 깨닫게 되는데… <br>
+                </p>
+
+                <p>
+                    이제껏 본 적 없는 진짜 <span>‘조커’</span>를 만나라!
+                </p>
+
+                <i class="fa-solid fa-angle-up"></i>
             </div>
         </div>
-
-
-        <!-- 작품의 종류 -->
-        <div id="work_type">
-            <h2>MASTERPIECE</h2>
-            <div class="masterpiece">
-                <div id="companion">
-                    <img src="img/index_img/type1.png" alt="companion2">
-                    <h4>Companion</h4>
-                    <p>
-                        Kaws' representative character <br>
-                        expresses a metaphor <br>
-                        for the inner side of <br>
-                        a lonely and tired modern man
-                    </p>
-                </div>
-
-                <div id="bff">
-                    <img src="img/index_img/type2.png" alt="BFF2">
-                    <h4>BFF</h4>
-                    <p>
-                        It is a character <br>
-                        that means "best friend forever" <br>
-                        and is made by borrowing <br>
-                        the gloves and shoes of the COMPANION.
-                    </p>
-                </div>
-
-                <div id="accomplice">
-                    <img src="img/index_img/type3.png" alt="Chum2">
-                    <h4>Accomplice</h4>
-                    <p>
-                        It is a character created by combining <br>
-                        the gloomy modern person's appearance <br>
-                        and childhood.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- 작품의 스타일이나 특징 -->
-        <div div id="work_style">
-            <div id="writer">
-                <img src="img/index_img/brian.jpg" alt="브라이언 도넬리">
-                <div id="writer_text">
-                    <h2>Brian Donnelly</h2>
-                    <p>
-                        Andy Warhol in the 21st century.
-                    </p>
-                    <p>
-                        This is what people call Brian Donnelly, <br>
-                        a pop artist and designer from New York, <br>
-                        the United States known as Cowes. <br>
-                    </p>
-                    <p>
-                        The most famous one is the character 'Company', <br>
-                        which made 'X' his symbol.
-                    </p>
-                </div>
-            </div>
-
-            <div id="interview">
-                <div id="interview_text">
-                    <h2>HYPEBEAST: KAWS COMPANION</h2>
-                    <p>
-                        Kaws Companion is a collection of characters <br>
-                        by Kanye West, Travis Scott and Drake.
-                    </p>
-                    <p>
-                        From 100-foot sculptures to 11-inch collections, <br>
-                        you can see them in museums around the world.
-                    </p>
-                    <p>
-                        HYPEBEAST explains why Kaws' iconic Companion character <br>
-                        has been resold for thousands of dollars <br>
-                        and has become today's Mickey Mouse version.
-                    </p>
-                </div>
-
-                <div id="video">
-                    <img src="img/index_img/video.JPG" alt="유튜브 영상" >
-                    <i class="fa-solid fa-play" onclick="openPopup()"></i>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div id="myModal" class="modal">
-            <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/eSOb8jWw2v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="myIframe"></iframe>
-        </div>
-
-
-        <!-- 작품 슬라이드 -->
-        <div id="work_slider">
-            <h2>THE WORKS OF KAWS</h2>
-            <div class="slide">
-            <ul>
-                <li><img src="img/index_img/work1.jpg" alt="companion4"></li>
-                <li><img src="img/index_img/work2.jpg" alt="bff3"></li>
-                <li><img src="img/index_img/work3.jpg" alt="chum3"></li>
-                <li><img src="img/index_img/work4.jpg" alt="accomplice2"></li>
-                <li><img src="img/index_img/work5.jpg" alt="holiday"></li>
-                <li><img src="img/index_img/work6.jpg" alt="limited"></li>
-            </ul>
-            </div>
-        </div>
-
-
-        <div id="work_roadmap">
-
-        </div>
-
-
-        <!--그 외의 작품 소개 -->
-        <div id="work_introduce">
-
-        </div>
-
-        <!-- FAQ -->
-        <div id="question">
-
-        </div>
-
-        <!-- 로그인..? -->
-        <div id="join">
-
-        </div>
-
-        <footer>
-            
-        </footer>
     </div>
+
+    <!-- 수상기록 -->
+    <div id="award">
+        <div id="award_box">
+            
+            <ul>
+                <li>
+                    베니스 국제 영화제 황금사자상 수상
+                </li>
+                <li>
+                    제92회 아카데미 시상식 남우주연상, 음악상 수상 <br>
+                    작품상, 감독상, 각색상, 음향편집상, 음향효과상, 의상상, 분장상, 편집상, 촬영상 등 11개 부문 노미네이트. <br>
+                    92회 시상식&역대 히어로 무비 최다 노미네이트
+                </li>
+                <li>
+                    제77회 골든 글로브 시상식 남우주연상-드라마 부문, 음악상 수상 <br>
+                    작품상, 감독상 등 4개 부문 후보
+                </li>
+                <li>
+                    크리틱스 초이스 어워드 남우주연상, 음악상 수상 <br>
+                    작품상, 각색상, 분장상 등 7개 부문 후보
+                </li>
+                <li>
+                    BAFTA 남우주연상, 음악상, 캐스팅상 수상 <br>
+                    작품상, 감독상, 각색상, 미술상, 분장상, 촬영상, 편집상, 음향상 등 11개 부문 시상식 최다 후보
+                </li>
+                <li>
+                    미국배우조합상(SAGs) 남우주연상 수상 <br>
+                    스턴트 앙상블 후보
+                </li>
+                <li>
+                    새틀라이트 각색상 수상
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- SUB 페이지로 이동 -->
+    <div id="subpage">
+        <div id="subpage_box">
+            <div id="introduce_box">
+                <div id="intro_textbox">
+                    <p id="intro_text1">
+                        "Uh, Murray. one small thing. <br>
+                        When you bring me out, <br>
+                        can you introduce me as Joker?"
+                    </p>                
+                    <P id="intro_text2">
+                        "아, 머레이. 하나만 더요. <br>
+                        무대에서 나를 소개할 때, <br>
+                        '조커'라고 불러줄래요?"
+                    </p>
+                    <a href="#">인물 소개 보러가기</a>
+                </div>
+            </div>
+
+            <div id="picture_box">
+                <div id="pic_textbox">
+                    <p id="pic_text1">
+                        Is it just me, <br>
+                        or is it getting crazier out there?
+                    </p>
+                    <p id="pic_text2">
+                        내가 미친 건가요, <br>
+                        세상이 더 미쳐가는 건가요?
+                    </p>
+                    <a href="#">예고편 및 평점 보러 가기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div id="footer_box">
+            <div id="footer_ul">
+                <img src="img/index/joker_logo.png" alt="조커 로고">
+                        <ul>
+                            <li>&#60; 개봉일 &#62;</li>
+                            <li>2019.10.02</li>
+                            <li>&#60; 장르 &#62;</li>
+                            <li>
+                                범죄 / 스릴러 / 느와르 / 드라마 / 피카레스크
+                            </li>
+                        </ul>
+
+                    <ul>
+                        <li>&#60; 감독 &#62;</li>
+                        <li>
+                            토드 필립스
+                        </li>
+                        <li>&#60; 제작 &#62;</li>
+                        <li>
+                            토드 필립스 <br>
+                            에마 틸린저 코스코프 <br>
+                            브래들리 쿠퍼 <br>
+                        </li>
+                        <li>&#60; 각본 &#62;</li>
+                        <li>
+                            토드 필립스 <br>
+                            스콧 실버
+                        </li>
+                    </ul>  
+
+                    <ul>
+                        <li>&#60; 출연 &#62;</li>
+                        <li>
+                            호아킨 피닉스 <br>
+                            로버트 드 니로 <br>
+                            프랜시스 콘로이 <br>
+                            브렛 컬런 <br>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
 </body>
 </html>
