@@ -198,9 +198,45 @@ nav #sns_navi{width: 200px; height: 40px;
 
 #work_slider span:hover{transform: scale(1.1); transition: all 0.3s ease;}
 
+/* 작가 커리어 */
+#careers{width: 1280px; height: 850px; margin: 0 auto;
+        background-color: darkseagreen;
+        display: flex; flex-direction: column;
+        align-items: center;}
+#careers h2{text-align: center; font-family: 'GmarketSansLight';
+            font-size: 40px; color: #fff;
+            padding-bottom: 60px;}
+#roadmap{width: 100%; height: 750px;
+         display: flex; 
+         justify-content: center; align-items: center;}
+
+#career_left, #career_right{width: 635px; height: 600px; border: 1px solid red;
+                            display: flex; flex-direction: column;
+                            justify-content: space-around;}
+
+#career_left{text-align: right; padding-bottom: 135px;}
+#career_right{text-align: left; padding-top: 135px;}
+
+.left_text{padding-right: 3%;}
+
+#career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 20px;
+                                  padding: 3% 0; color: #fff;}
+#career_left p, #career_right p{font-family: 'GmarketSansLight'; color: #fff;
+                                font-size: 12px;}
+
+
+.line{width: 3px; height: 700px; border: 1px solid yellow;
+      position: relative;} 
+.line > div{width: 3px; height: 700px;
+            position: absolute;}
+.line1{background-color: #cacaca;}
+.line2{background-color: #23222a;}
+       
+
 
 /* 그 외의 작품 소개 */
-#work_introduce{width: 1280px; height: 540px; margin: 0 auto;}
+#work_introduce{width: 1280px; height: 540px; margin: 0 auto;
+                padding-top: 7%;}
 #work_introduce h2{text-align: center; font-size: 40px; color: #fff;
                    font-family: 'GmarketSansLight'; padding-bottom: 50px;}
 
