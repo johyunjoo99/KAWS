@@ -51,7 +51,11 @@ $('.second').click(function(){
     $('.second').css('background-color', '#23222a');
 });
 
+
 //스크롤 로드맵
 
+
+
+//FAQ 슬라이딩
 
 });

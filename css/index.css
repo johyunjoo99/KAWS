@@ -79,25 +79,22 @@ nav #sns_navi{width: 200px; height: 40px;
 #slider_img ul li img{width: 580px; height: 380px; border-radius: 30px;}
 
 
-/* 작품 종류 */
-#work_type{width: 1280px; height: 410px; margin: 0 auto;
+/* 시그니처 */
+#signature{width: 1280px; height: 410px; margin: 0 auto;
            padding: 8% 0;}
-#work_type h2{text-align: center; font-size: 40px; color: #fff;
+#signature h2{text-align: center; font-size: 40px; color: #fff;
               font-family: 'GmarketSansLight'; padding-bottom: 50px;}
 
 .masterpiece{display: flex; 
              justify-content: space-around; align-items: center;}
-.masterpiece > div{width: 360px; height: 320px;
+.masterpiece > div{width: 45%; height: 320px;
                  background-color: #cabead; border-radius: 30px;}
-.masterpiece > div > img{width: 95px; height: 120px; margin: 8% 0 0 36%;}
+.masterpiece > div > img{width: 120px; margin: 5% 0 0 40%;}
 .masterpiece > div > h4{text-align: center; color: #23222a;
                         font-family: 'GmarketSansLight'; font-size: 20px;
                         padding: 3% 0;}
 .masterpiece > div > p{text-align: center; color: #23222a;
-                       font-family: 'GmarketSansLight'; font-size: 12px;}
-.masterpiece > #accomplice > p{padding-top: 2%;}
-
-#bff > img{margin: 8% 0 0 38%;}
+                       font-family: 'GmarketSansLight'; font-size: 14px;}
 
 
 /* 작품의 스타일이나 특징 */
@@ -200,7 +197,6 @@ nav #sns_navi{width: 200px; height: 40px;
 
 /* 작가 커리어 */
 #careers{width: 1280px; height: 850px; margin: 0 auto;
-        background-color: darkseagreen;
         display: flex; flex-direction: column;
         align-items: center;}
 #careers h2{text-align: center; font-family: 'GmarketSansLight';
@@ -210,33 +206,53 @@ nav #sns_navi{width: 200px; height: 40px;
          display: flex; 
          justify-content: center; align-items: center;}
 
-#career_left, #career_right{width: 635px; height: 600px; border: 1px solid red;
-                            display: flex; flex-direction: column;
-                            justify-content: space-around;}
+#career_left{width: 635px; height: 600px;
+              display: flex; flex-direction: column;
+              justify-content: space-around; align-items: flex-end;}
+#career_right{width: 635px; height: 600px;
+    display: flex; flex-direction: column;
+    justify-content: space-around; align-items: flex-start;}
 
 #career_left{text-align: right; padding-bottom: 135px;}
 #career_right{text-align: left; padding-top: 135px;}
 
-.left_text{padding-right: 3%;}
+.left{width: 500px; height: 200px;
+      display: flex; 
+      justify-content: space-between; align-items: center;}
+.left img{width: 160px; height: 160px;
+          padding: 0 5%;}
+.right img{width: 160px; height: 160px;
+           padding: 0 5%;}
+.right{width: 500px; height: 200px;
+       display: flex; 
+       justify-content: space-between; align-items: center;}
+#two{width: 400px;}
 
 #career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 20px;
                                   padding: 3% 0; color: #fff;}
 #career_left p, #career_right p{font-family: 'GmarketSansLight'; color: #fff;
                                 font-size: 12px;}
 
+#one{padding-bottom: 3%;}
 
-.line{width: 3px; height: 700px; border: 1px solid yellow;
-      position: relative;} 
-.line > div{width: 3px; height: 700px;
-            position: absolute;}
-.line1{background-color: #cacaca;}
-.line2{background-color: #23222a;}
+#solid{width: 5px; height: 700px; position: relative;}
+#solid .dot{width: 13px; height: 13px;
+            background-color: #23222a; 
+            position: relative; z-index: 10;
+            border-radius: 30px;}
+#solid > div:nth-of-type(1){position: absolute;
+                           top: -1%; right: -45%;}
+#solid > div:nth-of-type(3){position: absolute;
+                           bottom: -1%; right: -45%;}
+
+.line{width: 2px; height: 700px; background: #cacaca;} 
+.line1{width: 100%; height: 0%; background-color: #23222a;}
        
 
 
 /* 그 외의 작품 소개 */
 #work_introduce{width: 1280px; height: 540px; margin: 0 auto;
-                padding-top: 7%;}
+                padding-top: 7%; padding-bottom: 5%;}
 #work_introduce h2{text-align: center; font-size: 40px; color: #fff;
                    font-family: 'GmarketSansLight'; padding-bottom: 50px;}
 
@@ -257,12 +273,26 @@ nav #sns_navi{width: 200px; height: 40px;
 
 
 /* FAQ */
-#question{width: 1280px; height: 400px; margin: 0 auto;
-          background-color: papayawhip;}
-      
-/* 로그인..? */
-#join{width: 1280px; height: 60px; margin: 0 auto;
-      background-color: lightsteelblue;}
+#question{width: 1280px; height: auto; margin: 0 auto;
+          display: flex; justify-content: space-between;
+          align-items: flex-start; padding-bottom: 10%;}
+#question h2{text-align: left; font-size: 35px; color: #fff;
+             font-family: 'GmarketSansLight'; padding-bottom: 50px;}
+
+#slide_question{width: 600px; height: auto;}
+#slide_question .question{width: 100%; height: 80px; 
+                          background-color: #cabead;
+                          border-radius: 10px; position: relative;
+                          overflow: hidden; margin: 3% 0;}
+.question .title{width: 90%; height: 80px; padding-left: 5%;
+                 display: flex; justify-content: space-between;
+                 align-items: center;}
+.question h4{font-family: 'GmarketSansLight'; font-size: 20px;
+             color: #23222a;}
+.question i{font-size: 20px; color: #23222a;}
+
+.textSlide p{font-family: 'GmarketSansLight'; color: #23222a;
+             margin: 2% 5%;}
 
 footer{width: 1280px; height: 280px; margin: 0 auto;
        background-color: khaki;}
