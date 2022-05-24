@@ -43,6 +43,7 @@ header{width: 100%; height: 84px; background-color: #5b5652;
             display: flex; justify-content: space-between;
             align-items: center;}
 
+#header_box img[logo]{width: 80px;}
 
 nav{width: 700px; height: 60px; 
     display: flex; justify-content: space-around; align-items: center;}
@@ -63,18 +64,20 @@ nav #sns_navi{width: 200px; height: 40px;
 #slider{width: 1280px; height: 500px; margin: 0 auto;
         padding: 150px 0px 0px 0px;
         display: flex; 
-        justify-content: space-between; align-items: center;}
+        justify-content: space-between; align-items: center;} 
 
 #slider_text{width: 500px; height: 400px;
              display: flex; 
-             flex-direction: column;}
+             flex-direction: column; opacity: 0; transform: scale(1.2);
+             transition: all 0.5s;}
 #slider_text h2{font-family: 'GmarketSansBold'; font-weight: bold;
                 font-size: 45px; color: #fff;
                 padding-top: 16%;}
 #slider_text p{font-family: 'GmarketSansMedium'; font-size: 20px;
                color: #fff; padding-top: 2%;}
 
-#slider_img{width: 580px; height: 400px;}
+#slider_img{width: 580px; height: 400px; opacity: 0; transform: scale(1.2);
+            transition: all 0.5s;}
 #slider_img ul li{position: absolute;}
 #slider_img ul li img{width: 580px; height: 380px; border-radius: 30px;}
 
@@ -95,6 +98,8 @@ nav #sns_navi{width: 200px; height: 40px;
                         padding: 3% 0;}
 .masterpiece > div > p{text-align: center; color: #23222a;
                        font-family: 'GmarketSansLight'; font-size: 14px;}
+.masterpiece #x, .masterpiece #parody{opacity: 0; transform: scale(1.2);
+                                      transition: all 0.5s;}
 
 
 /* 작품의 스타일이나 특징 */
@@ -105,7 +110,9 @@ nav #sns_navi{width: 200px; height: 40px;
 #writer{width: 1200px; height: 410px; border-radius: 30px; 
         background-color: #23222a;
         display: flex; 
-        justify-content: space-around; align-items: center;}
+        justify-content: space-around; align-items: center;
+        opacity: 0; transform: scale(1.2);
+        transition: all 0.5s;}
       
 #writer img{width: 470px; height: 290px; border-radius: 30px;}
 
@@ -118,7 +125,9 @@ nav #sns_navi{width: 200px; height: 40px;
 
 #interview{width: 1200px; height: 310px; 
            padding: 8% 0; display: flex; 
-           justify-content: space-between; align-items: center;}
+           justify-content: space-between; align-items: center;
+           opacity: 0; transform: scale(1.2);
+           transition: all 0.5s;}
 
 #interview #video{position: relative;}
 #interview #video img{width: 470px; height: 264px; border-radius: 30px;}
@@ -161,14 +170,18 @@ nav #sns_navi{width: 200px; height: 40px;
                 padding-bottom: 60px;}
 #work_slider i{font-size: 40px; color: #fff;
                padding: 20px 30px; border-radius: 60px;
-               background-color: rgba(202, 190, 173, 0.5);}
+               background-color: rgba(202, 190, 173, 0.5);
+               opacity: 0; transform: scale(1.5);
+               transition: all 0.5s;}
 #work_slider .fa-angle-left{position: absolute; top: 40%; left: 0;}
 #work_slider .fa-angle-right{position: absolute; top: 40%; right: 0;}
 
 #work_slider > i:hover{background-color: rgba(202, 190, 173, 0.8); transition: all 0.3s ease;}
 
 .slide{width: 1058px; height: 390px; 
-       margin: 0 auto; overflow: hidden;}
+       margin: 0 auto; overflow: hidden;
+       opacity: 0; transform: scale(1.2);
+       transition: all 0.5s;}
 #work_img{width: 2136px;}
 .container{width: 310px; height: 390px;
            position: relative; float: left;
@@ -243,9 +256,10 @@ nav #sns_navi{width: 200px; height: 40px;
 #solid > div:nth-of-type(1){position: absolute;
                            top: -1%; right: -45%;}
 #solid > div:nth-of-type(3){position: absolute;
-                           bottom: -1%; right: -45%;}
+                           bottom: -1%; right: -45.5%;}
 
-.line{width: 2px; height: 700px; background: #cacaca;} 
+.line{width: 2px; height: 700px; background: #cacaca;
+      overflow: hidden;} 
 .line1{width: 100%; height: 0%; background-color: #23222a;}
        
 
@@ -258,7 +272,9 @@ nav #sns_navi{width: 200px; height: 40px;
 
 #other_work{width: 100%; height: 400px; 
             display: flex; 
-            justify-content: space-around; align-items: center;}
+            justify-content: space-around; align-items: center;
+            opacity: 0; transform: scale(1.2);
+            transition: all 0.5s;}
 #other_work > div{width: 300px; height: 400px;}
 #other_work > div > img{margin: 0 23%;}
 #other_work h4{text-align: center; color: #fff;
@@ -271,28 +287,93 @@ nav #sns_navi{width: 200px; height: 40px;
 #other_work #balloon p{padding-top: 15px;}
 
 
-
 /* FAQ */
 #question{width: 1280px; height: auto; margin: 0 auto;
           display: flex; justify-content: space-between;
-          align-items: flex-start; padding-bottom: 10%;}
-#question h2{text-align: left; font-size: 35px; color: #fff;
-             font-family: 'GmarketSansLight'; padding-bottom: 50px;}
+          align-items: flex-start; padding-bottom: 8%;}
+
+#faq{width: 300px; height: 50px;
+     opacity: 0; transform: scale(1.2);
+     transition: all 0.5s;}
+#faq h2{text-align: left; font-size: 35px; color: #fff;
+             font-family: 'GmarketSansLight'; padding-bottom: 1%;}
+#faq p{text-align: left; font-size: 20px; color: #fff;
+       font-family: 'GmarketSansLight'; }
 
 #slide_question{width: 600px; height: auto;}
-#slide_question .question{width: 100%; height: 80px; 
+#slide_question .question{width: 100%; height: auto; 
                           background-color: #cabead;
                           border-radius: 10px; position: relative;
-                          overflow: hidden; margin: 3% 0;}
+                           margin: 3% 0;}
 .question .title{width: 90%; height: 80px; padding-left: 5%;
                  display: flex; justify-content: space-between;
                  align-items: center;}
 .question h4{font-family: 'GmarketSansLight'; font-size: 20px;
              color: #23222a;}
-.question i{font-size: 20px; color: #23222a;}
+.question i{font-size: 20px; color: #23222a; transition: all 0.3s;}
+
+.textSlide {width: 100%; height: auto; display: none;}
+
+#slide_question .active{background-color: #5b5652; border: 2px solid #cabead;
+                        transition: all 0.3s;}
+
+#slide_question .active h4, #slide_question .active i, #slide_question .active p {color: #fff;}
+
+#slide_question .active i{transform: scaleY(-1); transition: all 0.3s;}
 
 .textSlide p{font-family: 'GmarketSansLight'; color: #23222a;
-             margin: 2% 5%;}
+             margin: 3% 5%;}
+.textSlide p:last-of-type{padding-bottom: 5%;}
 
-footer{width: 1280px; height: 280px; margin: 0 auto;
-       background-color: khaki;}
+.sliding{height: 380px; background-color: #5b5652;
+         border: 2px solid #cabead;}
+
+footer{width: 100%; height: 280px; border-top: 1px solid #cabead;}
+
+#footer_box{width: 1280px; height: 280px; margin: 0 auto;
+            display: flex; justify-content: space-between;
+            align-items: flex-start;}
+#footer_left{width: 500px; height: 200px; padding-top: 3%;
+             display: flex; justify-content: space-between;}
+
+#footer_nav p{font-family: 'S-CoreDream-4Regular'; 
+              color: #fff; padding-bottom: 40%;}
+
+#footer_nav ul li{padding-bottom: 40%;}                              
+#footer_nav ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 12px; 
+                    color: #fff;}
+
+#support p{font-family: 'S-CoreDream-4Regular'; 
+           color: #fff; padding-bottom: 10%;}
+#support ul li{padding-bottom: 13%;}
+#support ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 12px; 
+                 color: #fff;}
+
+#footer_sns p{font-family: 'S-CoreDream-4Regular'; 
+              color: #fff; padding-bottom: 23%;}
+#footer_sns ul li{padding-bottom: 13%;}
+
+#footer_right{width: 350px; height: 200px; padding-top: 3%;}
+
+#footer_right p:first-of-type{font-family: 'S-CoreDream-4Regular'; 
+                              color: #fff; padding-bottom: 10%;}
+#footer_right input{width: 300px; height: 44px;
+                    border-radius: 3px; border: 1px solid #23222a;
+                    position: relative; z-index: 10;}
+#footer_right input::placeholder{font-family: 'S-CoreDream-4Regular'; font-size: 14px;
+                                 padding-left: 2%; color: #cacaca;}
+#footer_right input:focus{border: 2px solid #cabead; outline: none;}
+
+#footer_right button{padding: 13px 14px; 
+                     margin-left: -2%; margin-top: 1%;
+                     border-style: none; border-radius: 3px;
+                     background-color: #23222a;}
+#footer_right button i{font-size: 16px; text-align: center; color: #fff;}
+
+#footer_right p:last-of-type{font-family: 'S-CoreDream-4Regular'; font-size: 12px;
+                             color: #fff; padding-top: 1%;}
+
+#footer_right button:hover{background-color: #cabead; transition: all 0.3s;}
+
+
+

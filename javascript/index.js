@@ -52,10 +52,78 @@ $('.second').click(function(){
 });
 
 
-//스크롤 로드맵
 
 
 
 //FAQ 슬라이딩
+$('.title').click(function(){
+    $(this).siblings().slideToggle();
+    $(this).parent().toggleClass('active');    
+});
+
+
+$('#slider_text').css('transform', 'scale(1)').css('opacity', '1');
+$('#slider_img').css('transform', 'scale(1)').css('opacity', '1');
+$('#x').css('transform', 'scale(1)').css('opacity', '1');
+$('#parody').css('transform', 'scale(1)').css('opacity', '1');
 
 });
+
+$(window).scroll(function (){
+
+    //스크롤 시 컨텐츠 block
+
+    var ws = $(this).scrollTop();
+
+    var writer = $('#writer').offset().top;
+    if(ws > writer-700){
+        $('#writer').css('transform', 'scale(1)').css('opacity', '1');
+    } 
+
+    var interview = $('#interview').offset().top;
+    if(ws > interview-700){
+        $('#interview').css('transform', 'scale(1)').css('opacity', '1');
+    }
+
+    var slide = $('.slide').offset().top;
+
+    if(ws > slide-700){
+        $('.slide').css('transform', 'scale(1)').css('opacity', '1');
+        $('#work_slider i').css('transform', 'scale(1)').css('opacity', '1');
+    }
+
+    var workIntroduce = $('#work_introduce').offset().top;
+
+    if(ws > workIntroduce-700){
+        $('#other_work').css('transform', 'scale(1)').css('opacity', '1');
+    }
+
+    var faq = $('#faq').offset().top;
+
+    if(ws > faq-700){
+        $('#faq').css('transform', 'scale(1)').css('opacity', '1');
+    }
+
+
+    
+    //스크롤 로드맵
+    var line_height = document.getElementById('solid').offsetTop;
+
+    if ((scrollY >= line_height - 600) && (scrollY <= line_height + 200)) {
+        roadmap();
+    }
+
+
+    function roadmap() {
+
+        var content_height = document.getElementsByClassName('line')[0].offsetHeight;
+        var height = scrollY - (line_height - 600);
+        var scrolled = (height / content_height) * 100;
+        document.getElementsByClassName('line1')[0].style.height = scrolled + "%";
+    }
+});
+
+
+
+
+
