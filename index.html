@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="stylesheet" href="css/commom.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index(1280-770px).css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="javascript/index.js"></script>
@@ -22,10 +23,10 @@
                 <a href="#"><img src="img/index_img/kaws_logo.png" alt="logo"></a>
                 <nav>
                     <ul id="navi">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#" data-attr="HOME">HOME</a></li>
+                        <li><a href="#" data-attr="ABOUT">ABOUT</a></li>
+                        <li><a href="#" data-attr="SHOP">SHOP</a></li>
+                        <li><a href="#" data-attr="LOGIN">LOGIN</a></li>
                     </ul>
 
                     <ul id="sns_navi">
@@ -60,8 +61,7 @@
                     <li><img src="img/index_img/slider4.jpg" alt="companion3"></li>
                     <li><img src="img/index_img/slider3.jpg" alt="companion2"></li>
                     <li><img src="img/index_img/slider2.jpg" alt="BFF1"></li>
-                    <li><img src="img/index_img/slider1.jpg" alt="companion1"></li>
-                    
+                    <li><img src="img/index_img/slider1.jpg" alt="companion1"></li> 
                 </ul>
             </div>
         </div>
@@ -97,7 +97,7 @@
         </div>
 
 
-        <!-- 작품의 스타일이나 특징 -->
+        <!-- 작가 소개 & 인터뷰 -->
         <div div id="work_style">
             <div id="writer">
                 <img src="img/index_img/brian.jpg" alt="브라이언 도넬리">
@@ -146,7 +146,9 @@
         <!-- 팝업 비디오 -->
         <div id="myModal" class="modal">
             <i class="fa-solid fa-xmark"></i>
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/eSOb8jWw2v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="myIframe"></iframe>
+            <div class="iframe">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/eSOb8jWw2v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="myIframe"></iframe>
+            </div>
         </div>
 
 
@@ -418,19 +420,19 @@
                     <div id="footer_nav">
                         <p>MENU</p>
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">SHOP</a></li>
-                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#" data-attr="HOME">HOME</a></li>
+                            <li><a href="#" data-attr="ABOUT">ABOUT</a></li>
+                            <li><a href="#" data-attr="SHOP">SHOP</a></li>
+                            <li><a href="#" data-attr="LOGIN">LOGIN</a></li>
                         </ul>
                     </div>
 
                     <div id="support">
                         <p>CUSTOMER SUPPORT</p>
                         <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">1:1 COUNSELING</a></li>
-                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="#" data-attr="FAQ">FAQ</a></li>
+                            <li><a href="#" data-attr="1:1 COUNSELING">1:1 COUNSELING</a></li>
+                            <li><a href="#" data-attr="NOTICE">NOTICE</a></li>
                         </ul>
                     </div>
 
