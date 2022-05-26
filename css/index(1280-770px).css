@@ -150,30 +150,30 @@
                opacity: 0; transform: scale(1.5);
                transition: all 0.5s;}
 #work_slider .fa-angle-left{position: absolute; 
-                            top: 37%; left: 0; margin-left: 1%;}
+                            top: 39%; left: 0; margin-left: 1%;}
 #work_slider .fa-angle-right{position: absolute; 
-                             top: 37%; right: 0; margin-right: 1%;}
+                             top: 39%; right: 0; margin-right: 1%;}
 
 #work_slider > i:hover{background-color: rgba(202, 190, 173, 0.8); 
                        transition: all 0.3s ease;
                        cursor: pointer;}
                        
-.slide{width: 82.65%; height: auto; 
+.slide{width: 83vw; height: 16vw; 
        margin: 0 auto; overflow: hidden;
-       opacity: 0; transform: scale(1.2);
-       transition: all 0.5s; padding-bottom: 15%;}
-#work_img{width: 175vw; height: auto;}
-.container{width: 13.5%; height: auto;
+       opacity: 0;
+       transition: all 0.5s; padding-bottom: 30%;}
+#work_img{width: 177vw;}
+.container{width: 13.5%; height: 30.5vw;
            position: relative; float: left;
            margin: 0 1%;}
 .image{width: 100%; height: 100%;
        border-radius: 30px;}
 .overlay{width: 100%; height: 100%;
-         position: absolute; bottom: 0;
+         position: absolute; top: 0;
          background: (0, 0, 0); background: rgba(0, 0, 0, 0.5);
          border-radius: 30px; opacity: 0;
          transition: all 0.3s ease;}
-.text{font-family: 'S-CoreDream-4Regular'; font-size: 30px; color: #fff;
+.text{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw; color: #fff;
       position: absolute; top: 50%; left: 50%;
       transform: translate(-50%, -50%);}
 
@@ -182,9 +182,9 @@
 #work_slider span{width: 2vw; height: 2vw; 
                   border-radius: 60px;}
 #work_slider .first{background-color: #23222a;
-                    position: absolute; left: 48%; bottom: 28%;}
+                    position: absolute; left: 48%; bottom: 29%;}
 #work_slider .second{background-color: #cacaca;
-                     position: absolute; left: 51%; bottom: 28%;}
+                     position: absolute; left: 51%; bottom: 29%;}
 
 #work_slider span:hover{transform: scale(1.1); transition: all 0.3s ease;
                         cursor: pointer;}
@@ -272,18 +272,17 @@
 /* FAQ */
 #question{width: 100%; height: auto; margin: 0 auto;
           display: flex; justify-content: space-between;
-          align-items: flex-start; padding-bottom: 8%;
-          margin: 0 1%;}
+          align-items: flex-start; padding-bottom: 8%;}
 
 #faq{width: 40%; height: auto;
      opacity: 0; transform: scale(1.2);
-     transition: all 0.5s;}
+     transition: all 0.5s; margin-left: 2%;}
 #faq h2{text-align: left; font-size: 3vw; color: #fff;
              font-family: 'GmarketSansLight'; padding-bottom: 1%;}
 #faq p{text-align: left; font-size: 2vw; color: #fff;
        font-family: 'GmarketSansLight'; }
 
-#slide_question{width: 50%; height: auto;}
+#slide_question{width: 50%; height: auto; margin-right: 2%;}
 #slide_question .question{width: 100%; height: auto; 
                           background-color: #cabead;
                           border-radius: 10px; position: relative;

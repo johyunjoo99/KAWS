@@ -1,5 +1,18 @@
 $(function(){
 
+//메뉴 슬라이딩
+$('.fa-bars').click(function(){
+    $('#header_box nav').slideToggle();
+});
+
+$(window).resize(function(){
+    if(window.innerWidth > 1280){
+        $('#big_nav').css('display', 'flex');
+    } else {
+        $('#big_nav').hide();
+    }
+});
+
 
 // 메인 슬라이더
 var i=0;
@@ -27,33 +40,62 @@ $('.fa-xmark').click(function(){
 
 
 // 작품 슬라이드
-$('.fa-angle-left').click(function(){
-    $('#work_img').animate({marginLeft: 0});
-    $('.first').css('background-color', '#23222a');
-    $('.second').css('background-color', '#cacaca');
-});
 
-$('.fa-angle-right').click(function(){
-    $('#work_img').animate({marginLeft: -1058});
-    $('.first').css('background-color', '#cacaca');
-    $('.second').css('background-color', '#23222a');
-});
+if (window.matchMedia("(min-width: 1280px)").matches) { 
 
-$('.first').click(function(){
-    $('#work_img').animate({marginLeft: 0});
-    $('.first').css('background-color', '#23222a');
-    $('.second').css('background-color', '#cacaca'); 
-});
+    $('.fa-angle-left').click(function(){
+        $('#work_img').animate({marginLeft: 0});
+        $('.first').css('background-color', '#23222a');
+        $('.second').css('background-color', '#cacaca');
+    });
+    
+    $('.fa-angle-right').click(function(){
+        $('#work_img').animate({marginLeft: -1058});
+        $('.first').css('background-color', '#cacaca');
+        $('.second').css('background-color', '#23222a');
+    });
+    
+    $('.first').click(function(){
+        $('#work_img').animate({marginLeft: 0});
+        $('.first').css('background-color', '#23222a');
+        $('.second').css('background-color', '#cacaca'); 
+    });
+    
+    $('.second').click(function(){
+        $('#work_img').animate({marginLeft: -1058});
+        $('.first').css('background-color', '#cacaca');
+        $('.second').css('background-color', '#23222a');
+    });
+    
 
-$('.second').click(function(){
-    $('#work_img').animate({marginLeft: -1058});
-    $('.first').css('background-color', '#cacaca');
-    $('.second').css('background-color', '#23222a');
-});
+} else if (window.matchMedia("(max-width: 1279px) and (min-width: 770px)").matches){ 
 
+    $('.fa-angle-left').click(function(){
+        $('#work_img').animate({marginLeft: 0});
+        $('.first').css('background-color', '#23222a');
+        $('.second').css('background-color', '#cacaca');
+    });
+    
+    $('.fa-angle-right').click(function(){
+        $('#work_img').animate({marginLeft: '-82vw'});
+        $('.first').css('background-color', '#cacaca');
+        $('.second').css('background-color', '#23222a');
+    });
+    
+    $('.first').click(function(){
+        $('#work_img').animate({marginLeft: 0});
+        $('.first').css('background-color', '#23222a');
+        $('.second').css('background-color', '#cacaca'); 
+    });
+    
+    $('.second').click(function(){
+        $('#work_img').animate({marginLeft: '-82vw'});
+        $('.first').css('background-color', '#cacaca');
+        $('.second').css('background-color', '#23222a');
+    });
+    
 
-
-
+}
 
 //FAQ 슬라이딩
 $('.title').click(function(){
@@ -68,6 +110,13 @@ $('#x').css('transform', 'scale(1)').css('opacity', '1');
 $('#parody').css('transform', 'scale(1)').css('opacity', '1');
 
 });
+
+
+
+
+
+
+
 
 $(window).scroll(function (){
 
