@@ -97,34 +97,38 @@ footer{width: 100%; height: auto; border-top: 1px solid #cabead;}
              padding: 5% 0 0 3%;
              display: flex; justify-content: space-between;}
 
-#footer_nav p{font-family: 'S-CoreDream-4Regular'; 
+#footer_nav p{font-family: 'S-CoreDream-4Regular'; font-size: 3.3vw;
               color: #fff; padding-bottom: 20%; padding-left: 10px;}
 
 #footer_nav ul li a, #support ul li a{position: relative; padding: 10px;}
 
 #footer_nav ul li{padding-bottom: 23%;}                              
-#footer_nav ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 12px; 
+#footer_nav ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw; 
                     color: #fff;}
 
 #support p{font-family: 'S-CoreDream-4Regular'; 
-           color: #fff; padding-bottom: 10%;}
+           color: #fff; padding-bottom: 10%;
+           font-size: 3.3vw;}
 #support ul li{padding-bottom: 13%;}
-#support ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 12px; 
+#support ul li a{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw; 
                  color: #fff; padding: 10px;}
 
 #footer_sns p{font-family: 'S-CoreDream-4Regular'; 
-              color: #fff; padding-bottom: 23%;}
+              color: #fff; padding-bottom: 23%;
+              font-size: 3.3vw;}
 #footer_sns ul li{padding-bottom: 13%;}
 
 #footer_right{width: 80%; height: 200px;
-              padding: 10% 0 0 3%;}
+              padding: 10% 0 0 5%;}
 
 #footer_right p:first-of-type{font-family: 'S-CoreDream-4Regular'; 
-                              color: #fff; padding-bottom: 2%;}
-#footer_right input{width: 300px; height: 44px;
+                              color: #fff; padding-bottom: 2%;
+                              font-size: 3.3vw;}
+#footer_right input{width: 60%; height: 9vw;
                     border-radius: 3px; border: 1px solid #23222a;
-                    position: relative; z-index: 10;}
-#footer_right input::placeholder{font-family: 'S-CoreDream-4Regular'; font-size: 14px;
+                    position: relative; z-index: 10;
+                    box-sizing: border-box; padding-top: 1%;}
+#footer_right input::placeholder{font-family: 'S-CoreDream-4Regular'; font-size: 2.3vw;
                                  padding-left: 2%; color: #cacaca;}
 #footer_right input:focus{border: 2px solid #cabead; outline: none;}
 
@@ -132,9 +136,9 @@ footer{width: 100%; height: auto; border-top: 1px solid #cabead;}
                      margin-left: -2%; margin-top: 1%;
                      border-style: none; border-radius: 3px;
                      background-color: #23222a;}
-#footer_right button i{font-size: 16px; text-align: center; color: #fff;}
+#footer_right button i{font-size: 3.4vw; text-align: center; color: #fff;}
 
-#footer_right p:last-of-type{font-family: 'S-CoreDream-4Regular'; font-size: 12px;
+#footer_right p:last-of-type{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw;
                              color: #fff; padding-top: 1.5%;}
 
 #footer_right button:hover{background-color: #cabead; transition: all 0.3s;

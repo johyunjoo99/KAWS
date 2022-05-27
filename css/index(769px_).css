@@ -108,7 +108,7 @@
            transition: all 0.5s;}
 
 #interview #video{position: relative; width: 95%; height: auto;}
-#interview #video img{width: 95%; height: auto; border-radius: 30px;}
+#interview #video img{width: 100%; height: auto; border-radius: 30px;}
 #interview #video i{position: absolute; top: 50%; left: 50%;
                     transform: translate(-50%, -50%);
                     font-size: 10vw; color: #fff; opacity: 0.8;}
@@ -148,7 +148,7 @@
                 font-size: 6.5vw; color: #fff;
                 padding: 80px 0 60px 0;}
 
-#work_box{width: 100%; height: 37vw;
+#work_box{width: 100%; height: 32vw;
           position: relative;}
 
 #work_slider i{font-size: 3vw; color: #fff;
@@ -157,20 +157,20 @@
                opacity: 0; transform: scale(1.5);
                transition: all 0.5s;}
 #work_slider .fa-angle-left{position: absolute; 
-                            top: 35%; left: 0; margin-left: 1%;}
+                            top:28%; left: 0; margin-left: 5%;}
 #work_slider .fa-angle-right{position: absolute; 
-                             top: 35%; right: 0; margin-right: 1%;}
+                             top: 28%; right: 0; margin-right: 5%;}
 
 #work_slider > i:hover{background-color: rgba(202, 190, 173, 0.8); 
                        transition: all 0.3s ease;
                        cursor: pointer;}
                        
-.slide{width: 83vw; height: 30.5vw; 
+.slide{width: 68vw; height: 25vw; 
        margin: 0 auto; overflow: hidden;
        opacity: 0;
        transition: all 0.5s; padding-bottom: 30%;}
-#work_img{width: 177vw;}
-.container{width: 13.5%; height: 30.5vw;
+#work_img{width: 150vw; height: 100%;}
+.container{width: 13%; height: 100%;
            position: relative; float: left;
            margin: 0 1%;}
 .image{width: 100%; height: 100%;
@@ -201,21 +201,20 @@
         display: flex; flex-direction: column;
         align-items: center;}
 #careers h2{text-align: center; font-family: 'GmarketSansLight';
-            font-size: 6.5vw; color: #fff;
-            padding-bottom: 60px;}
+            font-size: 6.5vw; color: #fff;}
 #roadmap{width: 100%; height: 180vw;
          display: flex; 
          justify-content: center; align-items: center;}
 
-#career_left{width: 46%; height: 70%;
+#career_left{width: 43%; height: 70%;
               display: flex; flex-direction: column;
               justify-content: space-around; align-items: flex-start;}
-#career_right{width: 46%; height: 70%;
+#career_right{width: 43%; height: 70%;
               display: flex; flex-direction: column;
               justify-content: space-around; align-items: flex-start;}
 
-#career_left{text-align: right; padding: 0 3% 37% 0;}
-#career_right{text-align: left; padding: 30% 0 0 3%;}
+#career_left{text-align: right; padding: 0 3% 30% 0;}
+#career_right{text-align: left; padding: 20% 0 0 3%;}
 
 .left{width: 100%; height: auto;
       display: flex; flex-direction: column-reverse;
@@ -232,7 +231,7 @@
 #career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 3vw;
                                   padding: 3% 0; color: #fff;}
 #career_left p, #career_right p{font-family: 'GmarketSansLight'; color: #fff;
-                                font-size: 2vw;}
+                                font-size: 2.3vw; line-height: 2.8vw;}
 
 #one{padding-bottom: 3%;}
 
@@ -284,7 +283,7 @@
 
 #faq{width: 90%; height: auto;
      opacity: 0; transform: scale(1.2);
-     transition: all 0.5s; margin: 0 0 5% 2% ;}
+     transition: all 0.5s; margin: 0 0 5% 5% ;}
 #faq h2{text-align: left; font-size: 6.5vw; color: #fff;
              font-family: 'GmarketSansLight'; padding-bottom: 1%;}
 #faq p{text-align: left; font-size: 3vw; color: #fff;
