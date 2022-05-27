@@ -11,6 +11,8 @@ a{text-decoration: none;}
 }
 /* 에스코어드림 Reg */
 
+@media(min-width: 1281px){
+
 /* header */
 header{width: 100%; height: 84px; background-color: #5b5652;
        position: fixed; top: 0; left: 0; z-index: 30;
@@ -20,7 +22,7 @@ header{width: 100%; height: 84px; background-color: #5b5652;
          display: flex; justify-content: space-between;
          align-items: center;}
 
-#header_box img[logo]{width: 84px;}
+#small_nav > a img{width: 80%;}
 
 nav{width: 750px; height: 84px; 
     display: flex; 
@@ -161,3 +163,4 @@ footer{width: 100%; height: 300px; border-top: 1px solid #cabead;}
 
 #footer_sns li a img:hover{transform: scale(1.1); transition: 0.5s;
                            cursor: pointer;}
+}

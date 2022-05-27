@@ -12,7 +12,7 @@ a{text-decoration: none;}
 /* 에스코어드림 Reg */
 
 
-@media(max-width: 1280px) and (min-width: 770px){
+@media(max-width: 769px){
 
 /* header */
 header{width: 100%; height: 84px; background-color: #5b5652;
@@ -23,7 +23,7 @@ header{width: 100%; height: 84px; background-color: #5b5652;
          display: flex; justify-content: space-between;
          align-items: center; box-sizing: border-box;}
 
-#header_box i {display: block; color: #eaeaed; font-size: 4vw;}
+#header_box i {display: block; color: #eaeaed; font-size: 6vw;}
 
 #small_nav >  a img{width: 80%;}
 
@@ -37,7 +37,7 @@ nav{display: none; width: 100%; height: 500px;
 
 #big_nav{display: none; flex-direction: column;}
 
-nav #navi{width: 600px; height: 200px; margin: 0 auto;
+nav #navi{width: 100%; height: 200px; margin: 0 auto;
           display: flex; flex-direction: column;
           justify-content: space-around; align-items: center;
           padding-top: 85px;}
@@ -93,7 +93,7 @@ footer{width: 100%; height: auto; border-top: 1px solid #cabead;}
 #footer_box{width: 100%; height: auto;
             display: flex; flex-direction: column;
             justify-content: space-between; align-items: flex-start;}
-#footer_left{width: 70%; height: 200px;
+#footer_left{width: 90%; height: 200px;
              padding: 5% 0 0 3%;
              display: flex; justify-content: space-between;}
 
@@ -113,15 +113,14 @@ footer{width: 100%; height: auto; border-top: 1px solid #cabead;}
                  color: #fff; padding: 10px;}
 
 #footer_sns p{font-family: 'S-CoreDream-4Regular'; 
-              color: #fff; padding-bottom: 23%; padding-left: 10px;}
+              color: #fff; padding-bottom: 23%;}
 #footer_sns ul li{padding-bottom: 13%;}
 
 #footer_right{width: 80%; height: 200px;
-              padding: 5% 0 0 3%;}
+              padding: 10% 0 0 3%;}
 
 #footer_right p:first-of-type{font-family: 'S-CoreDream-4Regular'; 
-                              color: #fff; padding-bottom: 2%;
-                              padding-left: 10px;}
+                              color: #fff; padding-bottom: 2%;}
 #footer_right input{width: 300px; height: 44px;
                     border-radius: 3px; border: 1px solid #23222a;
                     position: relative; z-index: 10;}

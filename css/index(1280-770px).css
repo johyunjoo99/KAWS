@@ -200,32 +200,32 @@
          display: flex; 
          justify-content: center; align-items: center;}
 
-#career_left{width: 40%; height: 90%;
+#career_left{width: 45%; height: 80%;
               display: flex; flex-direction: column;
               justify-content: space-around; align-items: flex-start;}
-#career_right{width: 40%; height: 85%;
+#career_right{width: 45%; height: 80%;
               display: flex; flex-direction: column;
               justify-content: space-around; align-items: flex-start;}
 
-#career_left{text-align: right; padding-bottom: 10%;}
-#career_right{text-align: left; padding-top: 16%;}
+#career_left{text-align: right; padding: 0 2% 15% 0;}
+#career_right{text-align: left; padding: 15% 0 0 2%;}
 
 .left{width: 100%; height: auto;
       display: flex; 
       justify-content: space-around; align-items: center;}
-.left img{width: 35%; height: auto;
-          padding-left: 3%;}
-.right img{width: 35%; height: auto;
-           padding-right:3%;}
+.left img{width: 50%;
+          padding-left: 2%;}
+.right img{width: 50%;
+           padding-right:2%;}
 .right{width: 100%; height: auto;
        display: flex; 
        justify-content: space-around; align-items: center;}
 
 
-#career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 2vw;
+#career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 2.5vw;
                                   padding: 3% 0; color: #fff;}
 #career_left p, #career_right p{font-family: 'GmarketSansLight'; color: #fff;
-                                font-size: 0.8vw;}
+                                font-size: 1.3vw;}
 
 #one{padding-bottom: 3%;}
 

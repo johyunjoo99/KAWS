@@ -31,93 +31,97 @@
 }
 /* Gmarket Sans B */
 
-@media (min-width: 1281px){
+@media(max-width: 769px){
 #wrap{width: 100%; height: auto;}
 
 /* slider */
-#slider{width: 1280px; height: 500px; margin: 0 auto;
-        padding: 150px 0px 0px 0px;
-        display: flex; 
-        justify-content: space-between; align-items: center;} 
+#slider{width: 100%; height: 150vw; margin: 0 auto;
+        padding: 30px 0px 0px 0px;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;} 
 
-#slider_text{width: 500px; height: 400px;
+#slider_text{width: 90%; height: 50vw;
              display: flex; 
-             flex-direction: column; opacity: 0; transform: scale(1.2);
-             transition: all 0.5s;}
+             flex-direction: column; opacity: 0;
+             transition: all 0.5s; padding: 2%;}
 #slider_text h2{font-family: 'GmarketSansBold'; font-weight: bold;
-                font-size: 2.8rem; color: #fff;
-                padding-top: 16%;}
-#slider_text p{font-family: 'GmarketSansMedium'; font-size: 1.25rem;
+                font-size: 7.5vw; color: #fff;
+                padding-top: 3%;}
+#slider_text p{font-family: 'GmarketSansMedium'; font-size: 3.5vw;
                color: #fff; padding-top: 2%;}
 
-#slider_img{width: 580px; height: 400px; opacity: 0; transform: scale(1.2);
-            transition: all 0.5s; }
-#slider_img ul li{position: absolute;}
-#slider_img ul li img{border-radius: 30px;}
+#slider_img{width: 90%; height: 53vw;
+            transition: all 0.5s; padding: 2%; transform: scale(1.2)}
+.slider_slide{width: 100%; height: 53vw;}
+#slider_img ul li{position: absolute; width: 95%;}
+#slider_img ul li img{border-radius: 30px; width: 100%;}
 
 
 /* 시그니처 */
-#signature{width: 1280px; height: 410px; margin: 0 auto;
-           padding: 8% 0;}
-#signature h2{text-align: center; font-size: 40px; color: #fff;
-              font-family: 'GmarketSansLight'; padding-bottom: 50px;}
+#signature{width: 100%; height: 130vw; margin: 0 auto;
+           padding: 9% 0;}
+#signature h2{text-align: center; font-size: 6.5vw; color: #fff;
+              font-family: 'GmarketSansLight'; padding-bottom: 5%;}
 
-.masterpiece{display: flex; 
+.masterpiece{width: 100%; height: 110vw;
+             display: flex; flex-direction: column;
              justify-content: space-around; align-items: center;}
-.masterpiece > div{width: 45%; height: 320px;
-                 background-color: #cabead; border-radius: 30px;}
-.masterpiece > div > img{width: 120px; margin: 5% 0 0 40%;}
+.masterpiece > div{width: 90%; height: 50vw;
+                   background-color: #cabead; border-radius: 30px;}
+.masterpiece > div > img{width: 20%; margin: 4% 0 0 40%;}
 .masterpiece > div > h4{text-align: center; color: #23222a;
-                        font-family: 'GmarketSansLight'; font-size: 20px;
-                        padding: 3% 0;}
+                        font-family: 'GmarketSansLight'; font-size: 5vw;
+                        padding: 2% 0;}
 .masterpiece > div > p{text-align: center; color: #23222a;
-                       font-family: 'GmarketSansLight'; font-size: 14px;}
+                       font-family: 'GmarketSansLight'; font-size: 2.3vw;}
 .masterpiece #x, .masterpiece #parody{opacity: 0; transform: scale(1.2);
                                       transition: all 0.5s;}
 
 
-/* 작품의 스타일이나 특징 */
-#work_style{width: 1280px; height: 1000px; margin: 0 auto;
-            display: flex; flex-wrap: wrap; 
+/* 작가 소개 & 인터뷰 */
+#work_style{width: 100%; height: 230vw; margin: 0 auto;
+            display: flex; flex-direction: column;
             justify-content: space-around; align-items: center;}
 
-#writer{width: 1200px; height: 410px; border-radius: 30px; 
+#writer{width: 90%; height: 110vw; border-radius: 30px; 
         background-color: #23222a;
-        display: flex; 
+        display: flex; flex-direction: column;
         justify-content: space-around; align-items: center;
         opacity: 0; transform: scale(1.2);
         transition: all 0.5s;}
       
-#writer img{width: 470px; height: 290px; border-radius: 30px;}
+#writer img{width: 80%;
+            border-radius: 30px; padding: 2%;}
 
-#writer_text{width: 450px; height: 230px;}
+#writer_text{width: 80%; height: 45vw;}
 #writer_text h2{font-family: 'GmarketSansLight'; color: #fff;
-                font-size: 30px;  font-weight: bold;
-                padding-bottom: 3%;}
+                font-size: 6.5vw;  font-weight: bold;
+                padding: 3% 0;}
 #writer_text p{font-family: 'GmarketSansLight'; color: #fff;
-               padding-bottom: 2%;}
+               padding-bottom: 2%; font-size: 2.6vw;}
 
-#interview{width: 1200px; height: 310px; 
-           padding: 8% 0; display: flex; 
+#interview{width: 95%; height: auto; 
+           padding: 8% 0; 
+           display: flex; flex-direction: column;
            justify-content: space-between; align-items: center;
            opacity: 0; transform: scale(1.2);
            transition: all 0.5s;}
 
-#interview #video{position: relative;}
-#interview #video img{width: 470px; height: 264px; border-radius: 30px;}
+#interview #video{position: relative; width: 95%; height: auto;}
+#interview #video img{width: 95%; height: auto; border-radius: 30px;}
 #interview #video i{position: absolute; top: 50%; left: 50%;
                     transform: translate(-50%, -50%);
-                    font-size: 60px; color: #fff; opacity: 0.8;}
+                    font-size: 10vw; color: #fff; opacity: 0.8;}
 
 #interview #video i:hover{opacity: 1; text-shadow: 0px 0px 10px #757575;
                           transition: all 0.3s ease; cursor: pointer;}
 
-#interview_text{width: 570px; height: 240px;}
+#interview_text{width: 90%; height: 60vw;}
 #interview_text h2{font-family: 'GmarketSansLight'; color: #fff;
-                   font-size: 30px; font-weight: bold;
+                   font-size: 6.5vw; font-weight: bold;
                    padding-bottom: 2%;}
 #interview_text p{font-family: 'GmarketSansLight'; color: #fff;
-                   padding-bottom: 2%;}
+                   padding-bottom: 2%; font-size: 2.6vw;}
 
 /* 팝업 비디오 */
 #myModal{width: 100%; height: 100%;
@@ -125,10 +129,11 @@
     background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8);
     overflow: auto; display: none;}
 
-.modal iframe{width: 1280px; height: 719px;
+.iframe{width: 100%; height: 100%; margin: 0 auto;}
+.modal iframe{width: 95%; height: 50vw;
                 position: absolute; top: 50%; left: 50%;
                 transform: translate(-50%, -50%);}
-.modal i{font-size: 40px; color: #fff; opacity: 0.8;
+.modal i{font-size: 6vw; color: #fff; opacity: 0.8;
            position: absolute; top: 5%; right: 5%;}
 .modal i:hover{opacity: 1; text-shadow: 0px 0px 10px #757575;
                transition: all 0.3s ease; cursor: pointer;}
@@ -136,129 +141,135 @@
 
 
 /* 작품 슬라이드 */
-#work_slider{width: 1280px; height: 700px; margin: 0 auto;
-             position: relative;}
+#work_slider{width: 100%; height: 75vw; margin: 0 auto;
+             padding-bottom: 20%;}
 
 #work_slider h2{text-align: center; font-family: 'GmarketSansLight';
-                font-size: 40px; color: #fff;
-                padding-bottom: 60px;}
-#work_slider i{font-size: 40px; color: #fff;
-               padding: 20px 30px; border-radius: 60px;
+                font-size: 6.5vw; color: #fff;
+                padding: 80px 0 60px 0;}
+
+#work_box{width: 100%; height: 37vw;
+          position: relative;}
+
+#work_slider i{font-size: 3vw; color: #fff;
+               padding: 1.5vw 2.5vw; border-radius: 60px;
                background-color: rgba(202, 190, 173, 0.5);
                opacity: 0; transform: scale(1.5);
                transition: all 0.5s;}
-#work_slider .fa-angle-left{position: absolute; top: 40%; left: 0;}
-#work_slider .fa-angle-right{position: absolute; top: 40%; right: 0;}
+#work_slider .fa-angle-left{position: absolute; 
+                            top: 35%; left: 0; margin-left: 1%;}
+#work_slider .fa-angle-right{position: absolute; 
+                             top: 35%; right: 0; margin-right: 1%;}
 
 #work_slider > i:hover{background-color: rgba(202, 190, 173, 0.8); 
                        transition: all 0.3s ease;
                        cursor: pointer;}
-
-.slide{width: 1058px; height: 390px; 
+                       
+.slide{width: 83vw; height: 30.5vw; 
        margin: 0 auto; overflow: hidden;
-       opacity: 0; transform: scale(1.2);
-       transition: all 0.5s;}
-#work_img{width: 2136px;}
-.container{width: 310px; height: 390px;
+       opacity: 0;
+       transition: all 0.5s; padding-bottom: 30%;}
+#work_img{width: 177vw;}
+.container{width: 13.5%; height: 30.5vw;
            position: relative; float: left;
            margin: 0 1%;}
-.image{width: 100%; height: auto;
+.image{width: 100%; height: 100%;
        border-radius: 30px;}
 .overlay{width: 100%; height: 100%;
-         position: absolute; bottom: 0;
+         position: absolute; top: 0;
          background: (0, 0, 0); background: rgba(0, 0, 0, 0.5);
          border-radius: 30px; opacity: 0;
          transition: all 0.3s ease;}
-.text{font-family: 'S-CoreDream-4Regular'; font-size: 30px; color: #fff;
+.text{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw; color: #fff;
       position: absolute; top: 50%; left: 50%;
       transform: translate(-50%, -50%);}
 
 .container:hover .overlay{opacity: 1;}
 
-#work_slider span{width: 20px; height: 20px; 
+#work_slider span{width: 3vw; height: 3vw; 
                   border-radius: 60px;}
 #work_slider .first{background-color: #23222a;
-                    position: absolute; left: 49%; bottom: 22%;}
+                    position: absolute; left: 48%; bottom: 5%;}
 #work_slider .second{background-color: #cacaca;
-                     position: absolute; left: 51%; bottom: 22%;}
+                     position: absolute; left: 52%; bottom: 5%;}
 
 #work_slider span:hover{transform: scale(1.1); transition: all 0.3s ease;
                         cursor: pointer;}
 
 /* 작가 커리어 */
-#careers{width: 1280px; height: 850px; margin: 0 auto;
+#careers{width: 100%; height: 200vw; margin: 0 auto;
         display: flex; flex-direction: column;
         align-items: center;}
 #careers h2{text-align: center; font-family: 'GmarketSansLight';
-            font-size: 40px; color: #fff;
+            font-size: 6.5vw; color: #fff;
             padding-bottom: 60px;}
-#roadmap{width: 100%; height: 750px;
+#roadmap{width: 100%; height: 180vw;
          display: flex; 
          justify-content: center; align-items: center;}
 
-#career_left{width: 635px; height: 600px;
+#career_left{width: 46%; height: 70%;
               display: flex; flex-direction: column;
-              justify-content: space-around; align-items: flex-end;}
-#career_right{width: 635px; height: 600px;
-    display: flex; flex-direction: column;
-    justify-content: space-around; align-items: flex-start;}
+              justify-content: space-around; align-items: flex-start;}
+#career_right{width: 46%; height: 70%;
+              display: flex; flex-direction: column;
+              justify-content: space-around; align-items: flex-start;}
 
-#career_left{text-align: right; padding-bottom: 135px;}
-#career_right{text-align: left; padding-top: 135px;}
+#career_left{text-align: right; padding: 0 3% 37% 0;}
+#career_right{text-align: left; padding: 30% 0 0 3%;}
 
-.left{width: 500px; height: 200px;
-      display: flex; 
-      justify-content: space-between; align-items: center;}
-.left img{width: 160px; height: 160px;
-          padding: 0 5%;}
-.right img{width: 160px; height: 160px;
-           padding: 0 5%;}
-.right{width: 500px; height: 200px;
-       display: flex; 
-       justify-content: space-between; align-items: center;}
-#two{width: 400px;}
+.left{width: 100%; height: auto;
+      display: flex; flex-direction: column-reverse;
+      justify-content: space-around; align-items: flex-end;}
+.left img{width: 70%;
+          padding-left: 3%;}
+.right img{width: 70%; height: auto;
+           padding-right:3%;}
+.right{width: 100%;
+       display: flex; flex-direction: column;
+       justify-content: space-around; align-items: flex-start;}
 
-#career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 20px;
+
+#career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 3vw;
                                   padding: 3% 0; color: #fff;}
 #career_left p, #career_right p{font-family: 'GmarketSansLight'; color: #fff;
-                                font-size: 12px;}
+                                font-size: 2vw;}
 
 #one{padding-bottom: 3%;}
 
-#solid{width: 10px; height: 700px; position: relative;}
-#solid .dot{width: 13px; height: 13px;
+#solid{width: 1.5%; height: 150vw; position: relative;}
+#solid .dot{width: 1.5vw; height: 1.5vw;
             background-color: #23222a; 
             position: relative; z-index: 10;
             border-radius: 30px;}
 #solid > div:nth-of-type(1){position: absolute;
-                           top: -1%; left: -10%;}
+                           top: -1%; left: -1%;}
 #solid > div:nth-of-type(3){position: absolute;
-                           bottom: -1%; left: -10%;}
+                           bottom: -1%; left: -2%;}
 
-.line{width: 2px; height: 700px; background: #cacaca;
+.line{width: 2px; height: 100%; background: #cacaca;
       overflow: hidden; margin: 0 auto;} 
-.line1{width: 100%; height: 0%; background-color: #23222a;
+.line1{width: 100%; height: 100%; background-color: #23222a;
        margin: 0 auto;}
        
 
 
 /* 그 외의 작품 소개 */
-#work_introduce{width: 1280px; height: 540px; margin: 0 auto;
+#work_introduce{width: 100%; height: auto; margin: 0 auto;
                 padding-top: 7%; padding-bottom: 5%;}
-#work_introduce h2{text-align: center; font-size: 40px; color: #fff;
+#work_introduce h2{text-align: center; font-size: 6.5vw; color: #fff;
                    font-family: 'GmarketSansLight'; padding-bottom: 50px;}
 
-#other_work{width: 100%; height: 400px; 
-            display: flex; 
+#other_work{width: 100%; height: auto; 
+            display: flex; flex-direction: column;
             justify-content: space-around; align-items: center;
             opacity: 0; transform: scale(1.2);
             transition: all 0.5s;}
-#other_work > div{width: 300px; height: 400px;}
-#other_work > div > img{margin: 0 23%;}
+#other_work > div{width: 90%; height: 85vw;}
+#other_work > div > img{width: 35%; margin: 0 32%;}
 #other_work h4{text-align: center; color: #fff;
-               font-family: 'GmarketSansLight'; font-size: 20px;
-               padding: 3% 0;}
-#other_work p {text-align: center; font-size: 13px;
+               font-family: 'GmarketSansLight'; font-size: 4vw;
+               padding: 1% 0;}
+#other_work p {text-align: center; font-size: 2.5vw;
                font-family: 'GmarketSansLight'; color: #fff;}
 
 #other_work #graffiti p{padding-top: 10px;}
@@ -266,33 +277,34 @@
 
 
 /* FAQ */
-#question{width: 1280px; height: auto; margin: 0 auto;
-          display: flex; justify-content: space-between;
-          align-items: flex-start; padding-bottom: 8%;}
+#question{width: 100%; height: auto; margin: 0 auto;
+          display: flex; flex-direction: column;
+          justify-content: space-between; align-items: flex-start; 
+          padding-bottom: 8%;}
 
-#faq{width: 300px; height: 50px;
+#faq{width: 90%; height: auto;
      opacity: 0; transform: scale(1.2);
-     transition: all 0.5s;}
-#faq h2{text-align: left; font-size: 35px; color: #fff;
+     transition: all 0.5s; margin: 0 0 5% 2% ;}
+#faq h2{text-align: left; font-size: 6.5vw; color: #fff;
              font-family: 'GmarketSansLight'; padding-bottom: 1%;}
-#faq p{text-align: left; font-size: 20px; color: #fff;
+#faq p{text-align: left; font-size: 3vw; color: #fff;
        font-family: 'GmarketSansLight'; }
 
-#slide_question{width: 600px; height: auto;}
+#slide_question{width: 90%; height: auto; margin: 0 auto;}
 #slide_question .question{width: 100%; height: auto; 
                           background-color: #cabead;
                           border-radius: 10px; position: relative;
                            margin: 3% 0;}
-.question .title{width: 90%; height: 80px; padding-left: 5%;
+.question .title{width: 90%; height: 10vw; padding-left: 5%;
                  display: flex; justify-content: space-between;
                  align-items: center;}
-.question h4{font-family: 'GmarketSansLight'; font-size: 20px;
+.question h4{font-family: 'GmarketSansLight'; font-size: 3vw;
              color: #23222a;}
-.question i{font-size: 20px; color: #23222a; transition: all 0.3s;}
+.question i{font-size: 3vw; color: #23222a; transition: all 0.3s;}
 
 .textSlide {width: 100%; height: auto; display: none;}
 
-#slide_question .active{background-color: #5b5652; border: 2px solid #cabead;
+#slide_question .active{background-color: #5b5652; border: 0.2vw solid #cabead;
                         transition: all 0.3s;}
 
 #slide_question .active h4, #slide_question .active i, #slide_question .active p {color: #fff;}
@@ -300,11 +312,12 @@
 #slide_question .active i{transform: scaleY(-1); transition: all 0.3s;}
 
 .textSlide p{font-family: 'GmarketSansLight'; color: #23222a;
-             margin: 3% 5%;}
+             margin: 3% 5%; font-size: 2.5vw;}
 .textSlide p:last-of-type{padding-bottom: 5%;}
 
 .sliding{height: 380px; background-color: #5b5652;
          border: 2px solid #cabead;}
 
 .question:hover{cursor: pointer;}
+
 }

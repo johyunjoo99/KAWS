@@ -40,62 +40,96 @@ $('.fa-xmark').click(function(){
 
 
 // 작품 슬라이드
+// function detectMediaSize(){
 
-if (window.matchMedia("(min-width: 1280px)").matches) { 
+//     if( window.matchMedia('(min-width: 1281px)').matches ){
 
-    $('.fa-angle-left').click(function(){
-        $('#work_img').animate({marginLeft: 0});
-        $('.first').css('background-color', '#23222a');
-        $('.second').css('background-color', '#cacaca');
-    });
-    
-    $('.fa-angle-right').click(function(){
-        $('#work_img').animate({marginLeft: -1058});
-        $('.first').css('background-color', '#cacaca');
-        $('.second').css('background-color', '#23222a');
-    });
-    
-    $('.first').click(function(){
-        $('#work_img').animate({marginLeft: 0});
-        $('.first').css('background-color', '#23222a');
-        $('.second').css('background-color', '#cacaca'); 
-    });
-    
-    $('.second').click(function(){
-        $('#work_img').animate({marginLeft: -1058});
-        $('.first').css('background-color', '#cacaca');
-        $('.second').css('background-color', '#23222a');
-    });
-    
+        $('.fa-angle-left').click(function(){
+            $('#work_img').animate({marginLeft: 0});
+            $('.first').css('background-color', '#23222a');
+            $('.second').css('background-color', '#cacaca');
+        });
 
-} else if (window.matchMedia("(max-width: 1279px) and (min-width: 770px)").matches){ 
+        $('.fa-angle-right').click(function(){
+            $('#work_img').animate({marginLeft: -1058});
+            $('.first').css('background-color', '#cacaca');
+            $('.second').css('background-color', '#23222a');
+        });
 
-    $('.fa-angle-left').click(function(){
-        $('#work_img').animate({marginLeft: 0});
-        $('.first').css('background-color', '#23222a');
-        $('.second').css('background-color', '#cacaca');
-    });
-    
-    $('.fa-angle-right').click(function(){
-        $('#work_img').animate({marginLeft: '-82vw'});
-        $('.first').css('background-color', '#cacaca');
-        $('.second').css('background-color', '#23222a');
-    });
-    
-    $('.first').click(function(){
-        $('#work_img').animate({marginLeft: 0});
-        $('.first').css('background-color', '#23222a');
-        $('.second').css('background-color', '#cacaca'); 
-    });
-    
-    $('.second').click(function(){
-        $('#work_img').animate({marginLeft: '-82vw'});
-        $('.first').css('background-color', '#cacaca');
-        $('.second').css('background-color', '#23222a');
-    });
-    
+        $('.first').click(function(){
+            $('#work_img').animate({marginLeft: 0});
+            $('.first').css('background-color', '#23222a');
+            $('.second').css('background-color', '#cacaca'); 
+        });
 
-}
+        $('.second').click(function(){
+            $('#work_img').animate({marginLeft: -1058});
+            $('.first').css('background-color', '#cacaca');
+            $('.second').css('background-color', '#23222a');
+        });
+
+//     } else if ( window.matchMedia('(max-width: 1280px) and (min-width: 770px)').matches ){
+
+//         $('.fa-angle-left').click(function(){
+//             $('#work_img').animate({marginLeft: 0});
+//             $('.first').css('background-color', '#23222a');
+//             $('.second').css('background-color', '#cacaca');
+//         });
+
+//         $('.fa-angle-right').click(function(){
+//             $('#work_img').animate({marginLeft: '-50vw'});
+//             $('.first').css('background-color', '#cacaca');
+//             $('.second').css('background-color', '#23222a');
+//         });
+
+//         $('.first').click(function(){
+//             $('#work_img').animate({marginLeft: 0});
+//             $('.first').css('background-color', '#23222a');
+//             $('.second').css('background-color', '#cacaca'); 
+//         });
+
+//         $('.second').click(function(){
+//             $('#work_img').animate({marginLeft: '-50vw'});
+//             $('.first').css('background-color', '#cacaca');
+//             $('.second').css('background-color', '#23222a');
+//         });
+
+//     } else if('(max-width: 769px)'){
+
+//         $('.fa-angle-left').click(function(){
+//             $('#work_img').animate({marginLeft: 0});
+//             $('.first').css('background-color', '#23222a');
+//             $('.second').css('background-color', '#cacaca');
+//         });
+
+//         $('.fa-angle-right').click(function(){
+//             $('#work_img').animate({marginLeft: -1058});
+//             $('.first').css('background-color', '#cacaca');
+//             $('.second').css('background-color', '#23222a');
+//         });
+
+//         $('.first').click(function(){
+//             $('#work_img').animate({marginLeft: 0});
+//             $('.first').css('background-color', '#23222a');
+//             $('.second').css('background-color', '#cacaca'); 
+//         });
+
+//         $('.second').click(function(){
+//             $('#work_img').animate({marginLeft: -1058});
+//             $('.first').css('background-color', '#cacaca');
+//             $('.second').css('background-color', '#23222a');
+//         });
+
+//     }
+ 
+// }
+
+
+// window.addEventListener('resize', detectMediaSize, false);
+
+
+
+
 
 //FAQ 슬라이딩
 $('.title').click(function(){
