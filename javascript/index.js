@@ -66,7 +66,35 @@ $('.fa-xmark').click(function(){
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
-
+   
+    $(window).resize(function(){
+        var fullWidth = $('#work_img').width();
+        var halfWidth = fullWidth/2;
+    
+            $('.fa-angle-left').click(function(){
+                $('#work_img').animate({marginLeft: 0});
+                $('.first').css('background-color', '#23222a');
+                $('.second').css('background-color', '#cacaca');
+            });
+    
+            $('.fa-angle-right').click(function(){
+                $('#work_img').animate({marginLeft: -halfWidth});
+                $('.first').css('background-color', '#cacaca');
+                $('.second').css('background-color', '#23222a');
+            });
+    
+            $('.first').click(function(){
+                $('#work_img').animate({marginLeft: 0});
+                $('.first').css('background-color', '#23222a');
+                $('.second').css('background-color', '#cacaca'); 
+            });
+    
+            $('.second').click(function(){
+                $('#work_img').animate({marginLeft: -halfWidth});
+                $('.first').css('background-color', '#cacaca');
+                $('.second').css('background-color', '#23222a');
+            });
+    });
  
 
 
