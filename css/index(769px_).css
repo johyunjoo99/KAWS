@@ -61,7 +61,8 @@
 #signature{width: 100%; height: 130vw; margin: 0 auto;
            padding: 9% 0;}
 #signature h2{text-align: center; font-size: 6.5vw; color: #fff;
-              font-family: 'GmarketSansLight'; padding-bottom: 5%;}
+              font-family: 'GmarketSansLight'; padding-bottom: 5%;
+              font-weight: bold;}
 
 .masterpiece{width: 100%; height: 110vw;
              display: flex; flex-direction: column;
@@ -71,8 +72,8 @@
 .masterpiece > div > img{width: 20%; margin: 4% 0 0 40%;}
 .masterpiece > div > h4{text-align: center; color: #23222a;
                         font-family: 'GmarketSansLight'; font-size: 5vw;
-                        padding: 2% 0;}
-.masterpiece > div > p{text-align: center; color: #23222a;
+                        padding: 2% 0; font-weight: bold;}
+.masterpiece > div > p{text-align: center; color: #23222a; font-weight: bold;
                        font-family: 'GmarketSansLight'; font-size: 2.3vw;}
 .masterpiece #x, .masterpiece #parody{opacity: 0; transform: scale(1.2);
                                       transition: all 0.5s;}
@@ -98,7 +99,7 @@
                 font-size: 6.5vw;  font-weight: bold;
                 padding: 3% 0;}
 #writer_text p{font-family: 'GmarketSansLight'; color: #fff;
-               padding-bottom: 2%; font-size: 2.6vw;}
+               padding-bottom: 2%; font-size: 2.6vw; font-weight: bold;}
 
 #interview{width: 95%; height: auto; 
            padding: 8% 0; 
@@ -121,7 +122,8 @@
                    font-size: 6.5vw; font-weight: bold;
                    padding-bottom: 2%;}
 #interview_text p{font-family: 'GmarketSansLight'; color: #fff;
-                   padding-bottom: 2%; font-size: 2.6vw;}
+                   padding-bottom: 2%; font-size: 2.6vw;
+                   font-weight: bold;}
 
 /* 팝업 비디오 */
 #myModal{width: 100%; height: 100%;
@@ -146,7 +148,7 @@
              padding-bottom: 20%;}
 
 #work_slider h2{text-align: center; font-family: 'GmarketSansLight';
-                font-size: 6.5vw; color: #fff;
+                font-size: 6.5vw; color: #fff;  font-weight: bold;
                 padding: 80px 0 60px 0;}
 
 #work_box{width: 100%; height: 33vw;
@@ -202,7 +204,7 @@
         display: flex; flex-direction: column;
         align-items: center;}
 #careers h2{text-align: center; font-family: 'GmarketSansLight';
-            font-size: 6.5vw; color: #fff;}
+            font-size: 6.5vw; color: #fff; font-weight: bold;}
 #roadmap{width: 100%; height: 180vw;
          display: flex; 
          justify-content: center; align-items: center;}
@@ -230,9 +232,9 @@
 
 
 #career_left h4, #career_right h4{font-family: 'GmarketSansLight'; font-size: 3vw;
-                                  padding: 3% 0; color: #fff;}
+                                  padding: 3% 0; color: #fff; font-weight: bold;}
 #career_left p, #career_right p{font-family: 'GmarketSansLight'; color: #fff;
-                                font-size: 2.3vw; line-height: 2.8vw;}
+                                font-size: 2.3vw; line-height: 2.8vw; font-weight: bold;}
 
 #one{padding-bottom: 3%;}
 
@@ -257,7 +259,8 @@
 #work_introduce{width: 100%; height: auto; margin: 0 auto;
                 padding-top: 7%; padding-bottom: 5%;}
 #work_introduce h2{text-align: center; font-size: 6.5vw; color: #fff;
-                   font-family: 'GmarketSansLight'; padding-bottom: 50px;}
+                   font-family: 'GmarketSansLight'; padding-bottom: 50px;
+                   font-weight: bold;}
 
 #other_work{width: 100%; height: auto; 
             display: flex; flex-direction: column;
@@ -268,9 +271,10 @@
 #other_work > div > img{width: 35%; margin: 0 32%;}
 #other_work h4{text-align: center; color: #fff;
                font-family: 'GmarketSansLight'; font-size: 4vw;
-               padding: 1% 0;}
+               padding: 1% 0; font-weight: bold;}
 #other_work p {text-align: center; font-size: 2.5vw;
-               font-family: 'GmarketSansLight'; color: #fff;}
+               font-family: 'GmarketSansLight'; color: #fff;
+               font-weight: bold;}
 
 #other_work #graffiti p{padding-top: 10px;}
 #other_work #balloon p{padding-top: 15px;}
@@ -286,9 +290,11 @@
      opacity: 0; transform: scale(1.2);
      transition: all 0.5s; margin: 0 0 5% 5% ;}
 #faq h2{text-align: left; font-size: 6.5vw; color: #fff;
-             font-family: 'GmarketSansLight'; padding-bottom: 1%;}
+        font-family: 'GmarketSansLight'; padding-bottom: 1%;
+        font-weight: bold;}
 #faq p{text-align: left; font-size: 3vw; color: #fff;
-       font-family: 'GmarketSansLight'; }
+       font-family: 'GmarketSansLight'; 
+       font-weight: bold;}
 
 #slide_question{width: 90%; height: auto; margin: 0 auto;}
 #slide_question .question{width: 100%; height: auto; 
@@ -297,9 +303,9 @@
                            margin: 3% 0;}
 .question .title{width: 90%; height: 10vw; padding-left: 5%;
                  display: flex; justify-content: space-between;
-                 align-items: center;}
+                 align-items: center; font-weight: bold;}
 .question h4{font-family: 'GmarketSansLight'; font-size: 2.8vw;
-             color: #23222a;}
+             color: #23222a; font-weight: bold;}
 .question i{font-size: 3vw; color: #23222a; transition: all 0.3s;}
 
 .textSlide {width: 100%; height: auto; display: none;}
@@ -312,7 +318,7 @@
 #slide_question .active i{transform: scaleY(-1); transition: all 0.3s;}
 
 .textSlide p{font-family: 'GmarketSansLight'; color: #23222a;
-             margin: 3% 5%; font-size: 2.5vw;}
+             margin: 3% 5%; font-size: 2.5vw; font-weight: bold;}
 .textSlide p:last-of-type{padding-bottom: 5%;}
 
 .sliding{height: 380px; background-color: #5b5652;
