@@ -39,6 +39,12 @@ $('.fa-xmark').click(function(){
 });
 
 
+// 윈도우 사이즈를 줄이면 새로고침
+    $(window).resize(function(){
+        location.reload();
+    });
+
+
 // 작품 슬라이드
     var fullWidth = $('#work_img').width();
     var halfWidth = fullWidth/2;
@@ -67,13 +73,6 @@ $('.fa-xmark').click(function(){
             $('.second').css('background-color', '#23222a');
         });
    
-
-// 윈도우 사이즈를 줄이면 새로고침
-    $(window).resize(function(){
-        location.reload();
-    });
- 
-
 
 //FAQ 슬라이딩
 $('.title').click(function(){
