@@ -66,11 +66,13 @@ $('.fa-xmark').click(function(){
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
+   
 
+// 윈도우 사이즈를 줄이면 새로고침
+    $(window).resize(function(){
+        location.reload();
+    });
  
-
-
-
 
 
 //FAQ 슬라이딩
@@ -86,11 +88,6 @@ $('#x').css('transform', 'scale(1)').css('opacity', '1');
 $('#parody').css('transform', 'scale(1)').css('opacity', '1');
 
 });
-
-
-
-
-
 
 
 

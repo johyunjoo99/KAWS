@@ -17,7 +17,7 @@ a{text-decoration: none;}
 /* header */
 header{width: 100%; height: 84px; background-color: #5b5652;
     position: fixed; top: 0; left: 0; z-index: 30;
-    border-bottom: 1px solid #cabead;}
+    border-bottom: 1.5px solid #cabead;}
 #header_box{width: 100%; height: 100%; margin: 0 auto; 
          background-color: #5b5652; padding: 0 2%;
          display: flex; justify-content: space-between;
@@ -30,7 +30,7 @@ header{width: 100%; height: 84px; background-color: #5b5652;
 #small_nav{width: 100%; display: flex;
            justify-content: space-between; align-items: center;}
 
-nav{display: none; width: 100%; height: 500px;
+nav{display: none; width: 100%; height: 450px;
     position: fixed; top: 85px; left: 0;
     background-color: #5b5652;
     box-shadow: 0px 10px 20px #44403a;}
@@ -90,11 +90,12 @@ nav #navi li a:after{
 /* footer*/
 footer{width: 100%; height: auto; border-top: 1px solid #cabead;}
 
-#footer_box{width: 100%; height: auto;
+#footer_box{width: 100%; height: 100vw;
             display: flex; flex-direction: column;
-            justify-content: space-between; align-items: flex-start;}
+            justify-content: space-between; align-items: flex-start;
+            padding-top: 15%}
 #footer_left{width: 90%; height: 200px;
-             padding: 5% 0 0 3%;
+             padding-left: 3%;
              display: flex; justify-content: space-between;}
 
 #footer_nav p{font-family: 'S-CoreDream-4Regular'; font-size: 3.3vw;
@@ -118,31 +119,35 @@ footer{width: 100%; height: auto; border-top: 1px solid #cabead;}
               font-size: 3.3vw;}
 #footer_sns ul li{padding-bottom: 13%;}
 
-#footer_right{width: 80%; height: 200px;
-              padding: 10% 0 0 5%;}
+#footer_right{width: 80%; height: 40vw;
+              padding: 15% 0 0 5%;}
 
 #footer_right p:first-of-type{font-family: 'S-CoreDream-4Regular'; 
                               color: #fff; padding-bottom: 2%;
                               font-size: 3.3vw;}
-#footer_right input{width: 60%; height: 9vw;
-                    border-radius: 3px; border: 1px solid #23222a;
+
+#search_box{width: 340px; height: 45px;}
+
+#footer_right input{width: 250px; height: 45px; box-sizing: border-box;
+                    border-radius: 3px 0 0 3px; border: 1px solid #23222a;
                     position: relative; z-index: 10;
-                    box-sizing: border-box; padding-top: 1%;}
-#footer_right input::placeholder{font-family: 'S-CoreDream-4Regular'; font-size: 2.3vw;
+                    box-sizing: border-box;}
+#footer_right input::placeholder{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw;
                                  padding-left: 2%; color: #cacaca;}
 #footer_right input:focus{border: 2px solid #cabead; outline: none;}
 
-#footer_right button{padding: 13px 14px; 
-                     margin-left: -2%; margin-top: 1%;
-                     border-style: none; border-radius: 3px;
-                     background-color: #23222a;}
-#footer_right button i{font-size: 3.4vw; text-align: center; color: #fff;}
+#footer_right button{padding: 13.5px 14px 14px 14px; 
+                     margin-left: -7px;
+                     border-style: none; border-radius: 0px 3px 3px 0;
+                     background-color: #23222a; border: 1px solid #23222a;}
+#footer_right button i{font-size: 16px; text-align: center; color: #fff;}
+#footer_right button i{font-size: 2.5vw; text-align: center; color: #fff;}
 
 #footer_right p:last-of-type{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw;
                              color: #fff; padding-top: 1.5%;}
 
 #footer_right button:hover{background-color: #cabead; transition: all 0.3s;
-                           cursor: pointer;}
+                           cursor: pointer; border: 1px solid #23222a;}
 
 #footer_nav ul li a:before, #support ul li a:before{
     content: attr(data-attr);

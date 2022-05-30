@@ -79,7 +79,7 @@
 
 
 /* 작가 소개 & 인터뷰 */
-#work_style{width: 100%; height: 230vw; margin: 0 auto;
+#work_style{width: 100%; height: 280vw; margin: 0 auto;
             display: flex; flex-direction: column;
             justify-content: space-around; align-items: center;}
 
@@ -93,7 +93,7 @@
 #writer img{width: 80%;
             border-radius: 30px; padding: 2%;}
 
-#writer_text{width: 80%; height: 45vw;}
+#writer_text{width: 80%; height: 52vw;}
 #writer_text h2{font-family: 'GmarketSansLight'; color: #fff;
                 font-size: 6.5vw;  font-weight: bold;
                 padding: 3% 0;}
@@ -132,7 +132,8 @@
 .iframe{width: 100%; height: 100%; margin: 0 auto;}
 .modal iframe{width: 95%; height: 50vw;
                 position: absolute; top: 50%; left: 50%;
-                transform: translate(-50%, -50%);}
+                transform: translate(-50%, -50%);
+                border: 0;}
 .modal i{font-size: 6vw; color: #fff; opacity: 0.8;
            position: absolute; top: 5%; right: 5%;}
 .modal i:hover{opacity: 1; text-shadow: 0px 0px 10px #757575;
@@ -148,7 +149,7 @@
                 font-size: 6.5vw; color: #fff;
                 padding: 80px 0 60px 0;}
 
-#work_box{width: 100%; height: 32vw;
+#work_box{width: 100%; height: 33vw;
           position: relative;}
 
 #work_slider i{font-size: 3vw; color: #fff;
@@ -165,19 +166,19 @@
                        transition: all 0.3s ease;
                        cursor: pointer;}
                        
-.slide{width: 68vw; height: 25vw; 
+.slide{width: 72vw; height: 25vw; 
        margin: 0 auto; overflow: hidden;
        opacity: 0;
        transition: all 0.5s; padding-bottom: 30%;}
-#work_img{width: 150vw; height: 100%;}
-.container{width: 13%; height: 100%;
+#work_img{width: 143vw; height: 100%;}
+.container{width: 21.5vw; height: 100%;
            position: relative; float: left;
-           margin: 0 1%;}
+           margin: 0 0.8%;}
 .image{width: 100%; height: 100%;
        border-radius: 30px;}
 .overlay{width: 100%; height: 100%;
          position: absolute; top: 0;
-         background: (0, 0, 0); background: rgba(0, 0, 0, 0.5);
+         background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5);
          border-radius: 30px; opacity: 0;
          transition: all 0.3s ease;}
 .text{font-family: 'S-CoreDream-4Regular'; font-size: 2.5vw; color: #fff;
@@ -297,7 +298,7 @@
 .question .title{width: 90%; height: 10vw; padding-left: 5%;
                  display: flex; justify-content: space-between;
                  align-items: center;}
-.question h4{font-family: 'GmarketSansLight'; font-size: 3vw;
+.question h4{font-family: 'GmarketSansLight'; font-size: 2.8vw;
              color: #23222a;}
 .question i{font-size: 3vw; color: #23222a; transition: all 0.3s;}
 
