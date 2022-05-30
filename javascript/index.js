@@ -40,16 +40,16 @@ $('.fa-xmark').click(function(){
 
 
 // 윈도우 사이즈를 줄이면 새로고침
-    $(window).resize(function(){
-        if(window.innerWidth > 1280){
-           location.reload(); 
-        } else if(window.innerWidth < 1281){
-            location.reload();
-        } else if(window.innerWidth < 770){
-            location.reload();
-        }
+    // $(window).resize(function(){
+    //     if(window.innerWidth > 1280){
+    //        location.reload(); 
+    //     } else if(window.innerWidth < 1281){
+    //         location.reload();
+    //     } else if(window.innerWidth < 770){
+    //         location.reload();
+    //     }
         
-    });
+    // });
 
 
 // 작품 슬라이드
