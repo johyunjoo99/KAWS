@@ -104,7 +104,7 @@
 #writer img{width: 80%;
             border-radius: 30px;}
 
-#writer_text{width: 80%; height: 45vw;}
+#writer_text{width: 80%; height: 42.5vw;}
 #writer_text h2{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                 font-size: 8vw;  font-weight: bold;
                 padding: 3% 0;}
@@ -132,7 +132,7 @@
                    font-size: 7vw; padding-bottom: 2%;}
 #interview_text p{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                    padding-bottom: 2%; font-size: 3vw;}
-                   
+
 .masterpiece #x > img{margin-top: 10%;}
 
 /* 팝업 비디오 */
@@ -244,7 +244,7 @@
 #career_left h4, #career_right h4{font-family: 'NEXON Lv1 Gothic OTF'; font-size: 3.5vw;
                                   padding: 3% 0; color: #fff;}
 #career_left p, #career_right p{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
-                                font-size: 2.5vw; line-height: 2.8vw;}
+                                font-size: 2.5vw; line-height: 3.5vw;}
 
 #one{padding-bottom: 3%;}
 
@@ -282,7 +282,7 @@
 #other_work h4{text-align: center; color: #fff;
                font-family: 'NEXON Lv1 Gothic OTF'; font-size: 5vw;
                padding: 1% 0;}
-#other_work p {text-align: center; font-size: 3vw;
+#other_work p {text-align: center; font-size: 3.5vw;
                font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;}
 
 #other_work #graffiti p{padding-top: 10px;}
@@ -308,12 +308,13 @@
                           background-color: #cabead;
                           border-radius: 10px; position: relative;
                            margin: 3% 0;}
-.question .title{width: 90%; height: 10vw; padding-left: 5%;
+.question .title{width: 90%; height: 10vw; padding-left: 3%;
                  display: flex; justify-content: space-between;
                  align-items: center; font-weight: bold;}
 .question h4{font-family: 'HallymGothic-Regular'; font-size: 3vw;
              color: #23222a;}
-.question i{font-size: 3vw; color: #23222a; transition: all 0.3s;}
+.question i{font-size: 3vw; color: #23222a; transition: all 0.3s;
+            margin-right: -3%;}
 
 .textSlide {width: 100%; height: auto; display: none;}
 
@@ -325,11 +326,11 @@
 #slide_question .active i{transform: scaleY(-1); transition: all 0.3s;}
 
 .textSlide p{font-family: 'NEXON Lv1 Gothic OTF'; color: #23222a;
-             margin: 3% 5%; font-size: 3vw;}
-.textSlide p:last-of-type{padding-bottom: 5%;}
+             margin: 3%; font-size: 3vw;}
+.textSlide p:last-of-type{padding-bottom: 3%;}
 
 .sliding{height: 380px; background-color: #5b5652;
-         border: 2px solid #cabead;}
+         border: 3px solid #cabead;}
 
 .question:hover{cursor: pointer;}
 
