@@ -115,7 +115,7 @@
 
 #interview #video{position: relative; width: 50%; height: auto;}
 
-.masterpiece > div > img:first-of-type{margin-top: 3vw;}
+.masterpiece > div > img:first-of-type{margin-top: 2.5vw;}
 #interview #video img{width: 100%; height: auto; border-radius: 30px;}
 #interview #video i{position: absolute; top: 50%; left: 50%;
                     transform: translate(-50%, -50%);
@@ -276,9 +276,9 @@
 #other_work > div{width: 300px; height: 400px;}
 #other_work > div > img{margin: 0 23%;}
 #other_work h4{text-align: center; color: #fff;
-               font-family: 'NEXON Lv1 Gothic OTF'; font-size: 1.6vw;
+               font-family: 'NEXON Lv1 Gothic OTF'; font-size: 2.5vw;
                padding: 3% 0;}
-#other_work p {text-align: center; font-size: 1vw;
+#other_work p {text-align: center; font-size: 1.5vw;
                font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;}
 
 #other_work #graffiti p{padding-top: 10px;}
@@ -303,12 +303,13 @@
                           background-color: #cabead;
                           border-radius: 10px; position: relative;
                            margin: 3% 0;}
-.question .title{width: 90%; height: 7vw; padding-left: 5%;
+.question .title{width: 90%; height: 7vw; padding-left: 3.5%;
                  display: flex; justify-content: space-between;
                  align-items: center;}
 .question h4{font-family: 'HallymGothic-Regular'; font-size: 1.8vw;
              color: #23222a;}
-.question i{font-size: 1.5vw; color: #23222a; transition: all 0.3s;}
+.question i{font-size: 1.5vw; color: #23222a; transition: all 0.3s;
+            margin-right: -3.5%;}
 
 .textSlide {width: 100%; height: auto; display: none;}
 
@@ -320,8 +321,8 @@
 #slide_question .active i{transform: scaleY(-1); transition: all 0.3s;}
 
 .textSlide p{font-family: 'NEXON Lv1 Gothic OTF'; color: #23222a;
-             margin: 3% 5%; font-size: 1.5vw;}
-.textSlide p:last-of-type{padding-bottom: 5%;}
+             margin: 4%; font-size: 1.5vw;}
+.textSlide p:last-of-type{padding-bottom: 3%;}
 
 .sliding{height: 380px; background-color: #5b5652;
          border: 2px solid #cabead;}
