@@ -16,13 +16,28 @@
 /* Gmarket Sans B */
 
 @font-face {
-    font-family: 'SUIT-Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-/* 수트 Light */
+       font-family: 'NEXON Lv1 Gothic OTF';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+   }
+   /* 넥슨 Lv.1 고딕 Regular */
+   
+@font-face {
+       font-family: 'HallymGothic-Regular';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+       font-weight: 400;
+       font-style: normal;
+   }
+   /* 한림고딕체 */
 
+@font-face {
+       font-family: 'S-CoreDream-4Regular';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+   }
+/* 에스코어드림 Reg */
 
 @media(max-width: 769px){
 #wrap{width: 100%; height: auto;}
@@ -51,25 +66,25 @@
 
 
 /* 시그니처 */
-#signature{width: 100%; height: 140vw; margin: 0 auto;
+#signature{width: 100%; height: 150vw; margin: 0 auto;
            padding: 9% 0;}
 #signature h2{text-align: center; font-size: 7vw; color: #fff;
-              font-family: 'SUIT-Light'; padding-bottom: 5%;}
+              font-family: 'NEXON Lv1 Gothic OTF'; padding-bottom: 5%;}
 
-.masterpiece{width: 100%; height: 120vw;
+.masterpiece{width: 100%; height: 130vw;
              display: flex; flex-direction: column;
              justify-content: space-around; align-items: center;}
-.masterpiece > div{width: 90%; height: 55vw;
+.masterpiece > div{width: 90%; height: 60vw;
                    background-color: #cabead; border-radius: 30px;}
 
 .masterpiece > div > img:first-of-type{margin-top: 6vw;}
 
 .masterpiece > div > img{width: 20%; margin: 4% 0 0 40%;}
 .masterpiece > div > h4{text-align: center; color: #23222a;
-                        font-family: 'SUIT-Light'; font-size: 5vw;
+                        font-family: 'NEXON Lv1 Gothic OTF'; font-size: 5vw;
                         padding: 2% 0; font-weight: bold;}
 .masterpiece > div > p{text-align: center; color: #23222a;
-                       font-family: 'SUIT-Light'; font-size: 3vw;}
+                       font-family: 'NEXON Lv1 Gothic OTF'; font-size: 3vw;}
 .masterpiece #x, .masterpiece #parody{opacity: 0; transform: scale(1.2);
                                       transition: all 0.5s;}
 
@@ -87,13 +102,13 @@
         transition: all 0.5s;}
       
 #writer img{width: 80%;
-            border-radius: 30px; padding: 2%;}
+            border-radius: 30px;}
 
-#writer_text{width: 80%; height: 42vw;}
-#writer_text h2{font-family: 'SUIT-Light'; color: #fff;
+#writer_text{width: 80%; height: 45vw;}
+#writer_text h2{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                 font-size: 8vw;  font-weight: bold;
                 padding: 3% 0;}
-#writer_text p{font-family: 'SUIT-Light'; color: #fff;
+#writer_text p{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                padding-bottom: 2%; font-size: 3vw;}
 
 #interview{width: 95%; height: auto; 
@@ -113,10 +128,12 @@
                           transition: all 0.3s ease; cursor: pointer;}
 
 #interview_text{width: 90%; height: 60vw;}
-#interview_text h2{font-family: 'SUIT-Light'; color: #fff;
+#interview_text h2{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                    font-size: 7vw; padding-bottom: 2%;}
-#interview_text p{font-family: 'SUIT-Light'; color: #fff;
+#interview_text p{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                    padding-bottom: 2%; font-size: 3vw;}
+                   
+.masterpiece #x > img{margin-top: 10%;}
 
 /* 팝업 비디오 */
 #myModal{width: 100%; height: 100%;
@@ -140,7 +157,7 @@
 #work_slider{width: 100%; height: 75vw; margin: 0 auto;
              padding-bottom: 20%;}
 
-#work_slider h2{text-align: center; font-family: 'SUIT-Light';
+#work_slider h2{text-align: center; font-family: 'NEXON Lv1 Gothic OTF';
                 font-size: 7vw; color: #fff;
                 padding: 80px 0 60px 0;}
 
@@ -196,7 +213,7 @@
 #careers{width: 100%; height: 200vw; margin: 0 auto;
         display: flex; flex-direction: column;
         align-items: center;}
-#careers h2{text-align: center; font-family: 'SUIT-Light';
+#careers h2{text-align: center; font-family: 'NEXON Lv1 Gothic OTF';
             font-size: 7vw; color: #fff;}
 #roadmap{width: 100%; height: 180vw;
          display: flex; 
@@ -224,9 +241,9 @@
        justify-content: space-around; align-items: flex-start;}
 
 
-#career_left h4, #career_right h4{font-family: 'SUIT-Light'; font-size: 3.5vw;
+#career_left h4, #career_right h4{font-family: 'NEXON Lv1 Gothic OTF'; font-size: 3.5vw;
                                   padding: 3% 0; color: #fff;}
-#career_left p, #career_right p{font-family: 'SUIT-Light'; color: #fff;
+#career_left p, #career_right p{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                                 font-size: 2.5vw; line-height: 2.8vw;}
 
 #one{padding-bottom: 3%;}
@@ -252,7 +269,7 @@
 #work_introduce{width: 100%; height: auto; margin: 0 auto;
                 padding-top: 7%; padding-bottom: 5%;}
 #work_introduce h2{text-align: center; font-size: 7vw; color: #fff;
-                   font-family: 'SUIT-Light'; padding-bottom: 50px;
+                   font-family: 'NEXON Lv1 Gothic OTF'; padding-bottom: 50px;
                    font-weight: bold;}
 
 #other_work{width: 100%; height: auto; 
@@ -263,10 +280,10 @@
 #other_work > div{width: 90%; height: 85vw;}
 #other_work > div > img{width: 35%; margin: 0 32%;}
 #other_work h4{text-align: center; color: #fff;
-               font-family: 'SUIT-Light'; font-size: 5vw;
+               font-family: 'NEXON Lv1 Gothic OTF'; font-size: 5vw;
                padding: 1% 0;}
 #other_work p {text-align: center; font-size: 3vw;
-               font-family: 'SUIT-Light'; color: #fff;}
+               font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;}
 
 #other_work #graffiti p{padding-top: 10px;}
 #other_work #balloon p{padding-top: 15px;}
@@ -282,9 +299,9 @@
      opacity: 0; transform: scale(1.2);
      transition: all 0.5s; margin: 0 0 5% 5% ;}
 #faq h2{text-align: left; font-size: 7vw; color: #fff;
-        font-family: 'SUIT-Light'; padding-bottom: 1%;}
+        font-family: 'NEXON Lv1 Gothic OTF'; padding-bottom: 1%;}
 #faq p{text-align: left; font-size: 3vw; color: #fff;
-       font-family: 'SUIT-Light';}
+       font-family: 'NEXON Lv1 Gothic OTF';}
 
 #slide_question{width: 90%; height: auto; margin: 0 auto;}
 #slide_question .question{width: 100%; height: auto; 
@@ -294,7 +311,7 @@
 .question .title{width: 90%; height: 10vw; padding-left: 5%;
                  display: flex; justify-content: space-between;
                  align-items: center; font-weight: bold;}
-.question h4{font-family: 'SUIT-Light'; font-size: 3.5vw;
+.question h4{font-family: 'HallymGothic-Regular'; font-size: 3vw;
              color: #23222a;}
 .question i{font-size: 3vw; color: #23222a; transition: all 0.3s;}
 
@@ -307,7 +324,7 @@
 
 #slide_question .active i{transform: scaleY(-1); transition: all 0.3s;}
 
-.textSlide p{font-family: 'SUIT-Light'; color: #23222a;
+.textSlide p{font-family: 'NEXON Lv1 Gothic OTF'; color: #23222a;
              margin: 3% 5%; font-size: 3vw;}
 .textSlide p:last-of-type{padding-bottom: 5%;}
 
