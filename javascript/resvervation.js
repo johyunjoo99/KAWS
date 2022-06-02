@@ -34,8 +34,8 @@ $(function(){
 
     $(".icon .fa-regular").mouseup(function(){
         $(".icon .fa-regular").css("transform", "scale(1)");
-        alert("The alarm settings are complete. <br>" + 
-              "The alarm will sound one hour before the start/end of the reservation.");
+        alert("The alarm settings are complete.                                             " + 
+              "The alarm will sound one hour before the start / end of the reservation.");
     });
 
     $(".icon .fa-solid").mousedown(function(){
