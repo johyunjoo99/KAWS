@@ -39,22 +39,69 @@
 }
 /* 에스코어드림 Reg */
 
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* LAB디지털체 */
+
+
+/* 슬라이더 */
 #slider{width: 100%; height: 800px;}
 #slider_box{width: 1280px; height: 800px; margin: 0 auto;
             position: relative;}
 #slider_container{width: 1280px; height: 656px;
-                  border: 1px solid red; padding-top: 60px;
+                  padding-top: 60px;
                   position: absolute; top: 84px; left: 0;
                   display: flex; justify-content: space-between;}
 
-#slider_container img{border-radius: 30px;}
+#slider_container img{width: 450px; height: 533px;
+                      border-radius: 30px;}
 
-#slider_container h4, h1{font-family: 'GmarketSansBold'; color: #fff;}
-#slider_container h4{font-size: 20px;}
-#slider_container h1{font-size: 45px;}
+#slider_info{width: 600px; height: 500px;
+             display: flex; flex-direction: column;
+             justify-content: space-around; align-items: flex-start;}
+
+#infomation{width: 580px; height: 250px;}
+
+#slider_container h4{font-family: "GmarketSansMedium"; font-size: 20px;
+                     color: #fff;}
+#slider_container h1{font-family: 'GmarketSansBold'; font-size: 45px;
+                     color: #fff;}
 #slider_container p{font-family: 'GmarketSansMedium'; color: #fff;}
 
 
+/* 가격 & 알림설정 */
+#price{width: 350px; height: 70px;
+       display: flex; justify-content: space-around;
+       align-items: flex-start;}
+#price span{font-family: 'GmarketSansMedium'; font-size: 45px;
+            color: #fff; margin-top: 10px;}
+.icon{width: 30px; height: 30px;
+      position: relative;}
+.icon i{font-size: 35px; color: #fff;
+        position: absolute;
+        top: 0; left: 0;
+        background-color: #cabead;
+        padding: 15px; border-radius: 15px;}
+.icon .fa-solid{display: none;}
+
+
+/* 예약 마감 카운트다운 */
+#stopwatch{width: 500px; height: 100px; 
+            background-color: #23222a; border-radius: 30px;
+            display: flex; justify-content: center;
+            align-items: center;}
+#stopwatch i{color: #fff; font-size: 60px;
+              margin: 0 15px 0 0;}
+#stopwatch p{width: 368px; height: 75px;
+              font-family: 'LAB디지털';
+              font-size: 75px; color: #fff;
+              margin-left: 20px;}
+
+/* 예약 고객 정보 */
 #reservation{width: 100%; height: 1000px;
              position: relative;}
 #reservation_box{width: 1280px; height: 1000px; margin: 0 auto;
@@ -63,7 +110,7 @@
 
 .background{width: 30%; height: 100%;
             background-color: #cabead;
-            position: absolute; right: 0;}
+            position: absolute; left: 0;}
 
 #othrer{width: 100%; height: 950px;}
 #other_box{width: 1280px; height: 950px; margin: 0 auto;

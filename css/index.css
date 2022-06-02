@@ -74,7 +74,7 @@
              justify-content: space-around; align-items: center;}
 .masterpiece > div{width: 45%; height: 330px;
                  background-color: #cabead; border-radius: 30px;}
-.masterpiece > div > img{width: 120px; margin: 5% 0 0 40%;}
+.masterpiece > div > img{width: 120px; margin: 3% 0 0 40%;}
 .masterpiece > div > h4{text-align: center; color: #23222a;
                         font-family: 'NEXON Lv1 Gothic OTF'; font-size: 30px;
                         padding: 3% 0;}
