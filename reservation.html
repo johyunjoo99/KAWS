@@ -43,6 +43,8 @@
             </div>
         </header>
 
+
+        <!-- 슬라이더 -->
         <div id="slider">
             <div id="slider_box">
                 <div id="slider_container">
@@ -63,8 +65,8 @@
                                 ￦1,490,000
                             </span>
                             <div class="icon">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-solid fa-bell"></i>
                             </div>
                         </div>
 
@@ -78,19 +80,73 @@
             </div>
         </div>
 
+
+        <!-- 예약 고객 정보 -->
         <div id="reservation">
             <div class="background"></div>
             <div id="reservation_box">
-                
+                <div id="form_info">
+                    <h2>ORDER FORM</h2>
+                    <form action="">
+                        <div class="name_id">
+                            <div class="name">
+                                <label for="name">Name</label> <br>
+                                <input type="text" name="name" id="name" placeholder="John doe">
+                            </div>
+                            <div class="address">
+                                <label for="address">ID</label> <br>
+                                <input type="address" name="address" id="address" placeholder="parson@mail.com">
+                            </div>
+                        </div>
+                        
+                        <div class="destination">
+                            <label for="destination">Delivery destination</label> <br>
+                            <textarea name="destination" id="destination" cols="30" rows="3" placeholder="Example text"></textarea>
+                        </div>
+                        
+                        <div class=quantity>
+                            <label for="quantity">Purchasing quantity</label>
+                            <select name="quantity" id="quantity">
+                                <option disabled selected>select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="agree">
+                            <div class="container">
+                                <label class="check">
+                                    I agree to the privacy policy
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="submit" name="Submit" id="Submit" value="Submit">
+                    </form>
+                    <div id="login">
+                    <p>Already have an account?</p>
+                    <a href="#">Login</a>
+                    </div>
+                </div>
+                <div id="form_text">
+
+                </div>
             </div>
         </div>
 
+
+
+        <!-- 다른 제품 슬라이드 -->
         <div id="other">
             <div id="other_box">
 
             </div>
         </div>
 
+
+
+        <!-- footer -->
         <footer>
             <div id="footer_box">
                 <div id="footer_left">

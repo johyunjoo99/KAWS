@@ -24,6 +24,11 @@ $(function(){
             clearInterval(x);
             document.getElementById("time").innerHTML = "00 : 00 : 00";
         }
+
+        if(distance < 0){
+            clearInterval(x);
+            $("#time").innerHTML = "00 : 00 : 00"
+        }
     }, 1000);
 
 
@@ -34,8 +39,14 @@ $(function(){
 
     $(".icon .fa-regular").mouseup(function(){
         $(".icon .fa-regular").css("transform", "scale(1)");
-        alert("The alarm settings are complete.                                             " + 
-              "The alarm will sound one hour before the start / end of the reservation.");
+        $(this).hide();
+        $(this).next().show();
+
+        setTimeout(function(){
+            alert("The alarm settings are complete." + "\n" + 
+              "The alarm will sound 1 hour before the start / end of the reservation.");
+        }, 100);
+        
     });
 
     $(".icon .fa-solid").mousedown(function(){
@@ -44,16 +55,13 @@ $(function(){
 
     $(".icon .fa-solid").mouseup(function(){
         $(".icon .fa-solid").css("transform", "scale(1)");
-        alert("The alarm settings have been canceled.");
-    });
-
-    $(".icon .fa-regular").click(function(){
-        $(this).hide();
-        $(this).next().show();
-    });
-
-    $(".icon .fa-solid").click(function(){
         $(this).hide();
         $(this).prev().show();
+
+        setTimeout(function(){
+            alert("The alarm settings have been canceled.");
+        }, 100);
+
     });
+
 });
