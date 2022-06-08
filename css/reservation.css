@@ -92,68 +92,75 @@
 /* 예약 마감 카운트다운 */
 #stopwatch{width: 500px; height: 100px; 
             background-color: #23222a; border-radius: 30px;
-            display: flex; justify-content: center;
+            display: flex; justify-content: space-evenly;
             align-items: center;}
-#stopwatch i{color: #fff; font-size: 60px;
-              margin: 0 15px 0 30px;}
+#stopwatch i{color: #fff; font-size: 60px;}
 #stopwatch p{width: 368px; height: 75px;
               font-family: 'LAB디지털';
-              font-size: 75px; color: #fff;
-              margin-left: 20px;}
+              font-size: 75px; color: #fff;}
 
 /* 예약 고객 정보 */
 #reservation{width: 100%; height: 750px;
              position: relative;}
 #reservation_box{width: 1280px; height: 750px; margin: 0 auto;
                  position: relative; z-index: 3;
-                 border: 1px solid blue;}
+                 display: flex;
+                 justify-content: space-between; align-items: center;}
 
 .background{width: 30%; height: 100%;
             background-color: #cabead;
-            position: absolute; left: 0;}
+            position: absolute; left: 0;
+            border-radius: 0 30px 30px 0;}
 
-#form_info{width: 560px; height: 580px;
+
+/* 고객 정보 입력란 */
+#form_info{width: 560px; height: 650px;
            background-color: #23222a;
-           border-radius: 30px;}
+           border-radius: 30px;
+           box-shadow: 10px 10px 15px #44403a;}
 
 #form_info h2{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
               font-size: 35px; text-align: center;
-              padding-top: 35px;}
+              padding: 30px 0 0 0;}
 
-#form_info form{width: 100%; height: 75%; margin: 0 auto;
+#form_info form{width: 100%; height: 76%; margin: 0 auto;
                 display: flex; flex-direction: column;
-                justify-content: space-around; align-items: center;}
+                justify-content: space-between; align-items: center;
+                padding-top: 1%;}
                 
 #form_info label{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                  font-size: 18px;}
 
+
+/* 이름 & 아이디 */
 .name_id{width: 85%; height: 23%;
          display: flex; flex-wrap: nowrap;
          justify-content: space-between; align-items: center;}
 
 .name_id label{margin-bottom: 5px;}
 .name_id input{width: 200px; height: 30px; border-radius: 10px;
-               border: none; font-family: 'NEXON Lv1 Gothic OTF';
-               font-size: 14px; padding: 9px 0 9px 5px;}
-.name_id input:focus{border: 2px solid #cabead; outline: none;}
+               border: 1px solid #23222a; 
+               font-family: 'NEXON Lv1 Gothic OTF';
+               font-size: 14px; padding: 15px 0 15px 7px;}
 
+
+/* 배송지 */
 .destination{width: 85%; height: 20%;}
-
-.destination label{margin-bottom: 5px;}
-.destination textarea{width: 100%; height: 45px; border-radius: 10px;
-                      border: none; font-family: 'NEXON Lv1 Gothic OTF';
-                      font-size: 14px; padding: 9px 0 9px 5px;}
+.destination textarea{width: 98%; height: 45px; border-radius: 10px;
+                      border: 1px solid #23222a; 
+                      font-family: 'NEXON Lv1 Gothic OTF';
+                      font-size: 14px; padding: 10px 0 10px 10px;}
 .destination textarea:focus{border: 2px solid #cabead; outline: none;}
 
+
+/* 구매 수량 */
 .quantity{width: 85%; height: 10%;}
 .quantity label{margin-right: 5px;}
 .quantity select{padding: 5px 20px; border-radius: 10px;
-                 border: none;
+                 border: 1px solid #23222a;
                  font-family: 'NEXON Lv1 Gothic OTF'; font-size: 18px;}
 .quantity select:focus{outline: none; border: 2px solid #cabead;}
 .quantity option{font-family: 'NEXON Lv1 Gothic OTF'; font-size: 18px;}
-
-.agree{width: 85%; height: 5%;}
 
 
 /* 체크박스 디자인 */
@@ -172,27 +179,38 @@
            background-color: #fff;
            border-radius: 5px;}
 .container input:checked ~ .checkmark{background-color: #cabead;}
-.checkmark:after{content: "";
-                 font-size: 10px;
+.checkmark:after{content: "\f00c";
+                 font-family: "Font Awesome 5 Free";
+                 font-weight: 900;
                  position: absolute;
                  display: none;}
-.container input:checked ~ .checkmark:after{display: block;}
-.container .checkbox:after{top: 5px; left: 9px;
+.container input:checked ~ .checkmark:after{display: block;
+                                            position: absolute;
+                                            top: 3px; left: 5px;}
+.container .checkbox:after{content: "\f00c";
+                           font-family: "Font Awesome 5 Free";
+                           font-weight: 900;
+                           top: 5px; left: 9px;
                            width: 5px; height: 10px;
-                           border: solid white;
                            border-width: 0 3px 3px 0;
                            transform: rotate(45deg);}
 
-            
+
+/* 정보 제공 동의 */
+.agree{width: 85%; height: 5%; margin: 3% 0 1% 0;}
 
 .container span{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
-            font-size: 18px;}
+                font-size: 18px;}
 
+
+/* 제출 버튼 */
 input[type="submit"]{width: 85%; height: 10%;
                      border: none; border-radius: 10px;
                      background-color: #cabead; font-size: 18px;
-                     font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;}
+                     font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
+                     margin-bottom: 2%;}
 
+/* 로그인 유무 */
 #login{width: 85%; height: 20px; margin: 0 auto;
        display: flex; justify-content: center;}
 #login p{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
@@ -200,7 +218,40 @@ input[type="submit"]{width: 85%; height: 10%;
 #login a{font-family: 'NEXON Lv1 Gothic OTF'; color: #cabead;
          font-size: 18px; text-decoration: underline;}
 
+
+/* 연락처 */
+#form_text{width: 600px; height: 80%;
+           display: flex; flex-direction: column;
+           justify-content: space-between; align-items: flex-start;}
+#form_text h4{font-family: "GmarketSansMedium"; font-size: 20px;
+              color: #fff;}
+#form_text h1{font-family: "GmarketSansMedium"; font-size: 40px;
+              color: #fff;}
+#form_text #contact{width: 100%; height: 15%;
+                    padding: 3% 0 30% 0; display: flex;
+                    justify-content: space-between; align-items: center;}
+
+#contact #call, #contact #mail{width: 60%; height: 30%;
+                               display: flex;
+                               justify-content: space-around; align-items: center;}
+#contact #call i, #contact #mail i{color: #fff; font-size: 40px;
+                                   background-color: #cabead; padding: 15px;
+                                   border-radius: 10px;}
+#contact #call div, #contact #mail div{width: 60%; height: 100%;
+                                       font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
+                                       font-size: 20px; text-align: center;
+                                       border-bottom: 1px solid #cabead;}
+
+#form_text p{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
+             font-size: 18px;}
+
 /* 다른 제품 슬라이드 */
 #othrer{width: 100%; height: 950px;}
 #other_box{width: 1280px; height: 950px; margin: 0 auto;
            border: 1px solid green;} 
+#other_box h4{font-family: "GmarketSansMedium"; font-size: 20px;
+              color: #fff; margin-top: 10%;}
+#other_box h1{font-family: "GmarketSansMedium"; font-size: 40px;
+              color: #fff;}
+
+

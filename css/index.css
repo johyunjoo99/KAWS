@@ -159,7 +159,7 @@
 #work_slider .fa-angle-left{position: absolute; top: 40%; left: 0;}
 #work_slider .fa-angle-right{position: absolute; top: 40%; right: 0;}
 
-#work_slider > i:hover{background-color: rgba(202, 190, 173, 0.8); 
+#work_box > i:hover{background-color: #cabead; 
                        transition: all 0.3s ease;
                        cursor: pointer;}
 

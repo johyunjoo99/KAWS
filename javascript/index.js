@@ -79,7 +79,6 @@ $('.fa-xmark').click(function(){
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
-   
 
 //FAQ 슬라이딩
 $('.title').click(function(){

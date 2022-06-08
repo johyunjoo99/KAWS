@@ -1,15 +1,15 @@
 $(function(){
 
     // 예약 마감시간까지 카운트다운
-    var time = new Date();
-    var countDownDate = new Date(time.getFullYear(), time.getMonth(), time.getDay(), 18, 00, 00).getTime();
+    var timer = new Date();
+    var countDown = new Date(timer.getFullYear(), timer.getMonth(), timer.getDate(), 18, 00, 00);
 
     var x = setInterval(function(){
         var now = new Date().getTime();
 
-        var distance = countDownDate - now;
+        var distance = countDown - now;
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
         var minutes = Math.floor(distance %(1000 * 60 * 60) / (1000 * 60));
         var seconds = Math.floor(distance % (1000 * 60) / 1000);
@@ -23,11 +23,6 @@ $(function(){
         if(distance < 0){
             clearInterval(x);
             document.getElementById("time").innerHTML = "00 : 00 : 00";
-        }
-
-        if(distance < 0){
-            clearInterval(x);
-            $("#time").innerHTML = "00 : 00 : 00"
         }
     }, 1000);
 
@@ -62,6 +57,20 @@ $(function(){
             alert("The alarm settings have been canceled.");
         }, 100);
 
+    });
+
+
+    //예약 완료
+    $("form input[type='submit']").mousedown(function(){
+        $(this).css("transform", "scale(0.95)");
+    });
+
+    $("form input[type='submit']").mouseup(function(){
+        $(this).css("transform", "scale(1)");
+
+        setTimeout(function(){
+            alert("Your reservation has been made.");
+        });
     });
 
 });
