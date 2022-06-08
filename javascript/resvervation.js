@@ -73,4 +73,47 @@ $(function(){
         });
     });
 
+
+    // 다른 제품 슬라이드
+    var page = 0;
+
+    $(".fa-angle-right").click(function(){
+
+        page++;
+
+        $("#other_img").stop().animate({marginLeft: -384 * page});
+
+        if(page > 5){
+    
+            $("#other_img").stop().animate({marginLeft: 0});
+        }
+    });
+
+    $(".fa-angle-left").click(function(){
+
+        page--;
+
+        $("#other_img").stop().animate({marginLeft: -384 * page});
+
+        if(page < 0){
+            page = 0;
+
+            $("#other_img").stop().animate({marginLeft: 0});
+        }
+    });
+
+
+    // 영역 나타나는 효과
+
+    $("#slider_container").css('transform', 'scale(1)').css('opacity', '1');
+
+    $(window).scroll(function(){
+        var ws = $(this).scrollTop();
+
+        var form = $("#form_info").offset().top;
+        if(ws > form-700){
+            $("#form_info").css('transform', 'scale(1)').css('opacity', '1');
+        }
+    });
+
 });

@@ -53,17 +53,17 @@ $('.fa-xmark').click(function(){
 
 
 // 작품 슬라이드
-    var fullWidth = $('#work_img').width();
-    var halfWidth = fullWidth/2;
 
-        $('.fa-angle-left').click(function(){
+    function slideResize(){
+        if(window.matchMedia(" (min-width: 0px) and (max-width: 769px)").matches){
+            $('.fa-angle-left').click(function(){
             $('#work_img').animate({marginLeft: 0});
             $('.first').css('background-color', '#23222a');
             $('.second').css('background-color', '#cacaca');
         });
 
         $('.fa-angle-right').click(function(){
-            $('#work_img').animate({marginLeft: -halfWidth});
+            $('#work_img').animate({marginLeft: "-71.5vw"});
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
@@ -75,10 +75,66 @@ $('.fa-xmark').click(function(){
         });
 
         $('.second').click(function(){
-            $('#work_img').animate({marginLeft: -halfWidth});
+            $('#work_img').animate({marginLeft: "-71.5vw"});
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
+    } else if(window.matchMedia("(min-width: 770px) and (max-width: 1280px)").matches){
+        $('.fa-angle-left').click(function(){
+            $('#work_img').animate({marginLeft: 0});
+            $('.first').css('background-color', '#23222a');
+            $('.second').css('background-color', '#cacaca');
+        });
+
+        $('.fa-angle-right').click(function(){
+            $('#work_img').animate({marginLeft: "-83.5vw"});
+            $('.first').css('background-color', '#cacaca');
+            $('.second').css('background-color', '#23222a');
+        });
+
+        $('.first').click(function(){
+            $('#work_img').animate({marginLeft: 0});
+            $('.first').css('background-color', '#23222a');
+            $('.second').css('background-color', '#cacaca'); 
+        });
+
+        $('.second').click(function(){
+            $('#work_img').animate({marginLeft: "-83.5vw"});
+            $('.first').css('background-color', '#cacaca');
+            $('.second').css('background-color', '#23222a');
+        });
+    } else{
+        $('.fa-angle-left').click(function(){
+            $('#work_img').animate({marginLeft: 0});
+            $('.first').css('background-color', '#23222a');
+            $('.second').css('background-color', '#cacaca');
+        });
+
+        $('.fa-angle-right').click(function(){
+            $('#work_img').animate({marginLeft: -1068});
+            $('.first').css('background-color', '#cacaca');
+            $('.second').css('background-color', '#23222a');
+        });
+
+        $('.first').click(function(){
+            $('#work_img').animate({marginLeft: 0});
+            $('.first').css('background-color', '#23222a');
+            $('.second').css('background-color', '#cacaca'); 
+        });
+
+        $('.second').click(function(){
+            $('#work_img').animate({marginLeft: -1068});
+            $('.first').css('background-color', '#cacaca');
+            $('.second').css('background-color', '#23222a');
+        });
+    }
+
+}
+
+    window.addEventListener("resize", slideResize, false);
+
+    slideResize();
+
 
 //FAQ 슬라이딩
 $('.title').click(function(){
