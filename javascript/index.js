@@ -60,13 +60,13 @@ $('.fa-xmark').click(function(){
             var halfWidth = fullWidth / 2;
     
             $('.fa-angle-left, .first').click(function(){
-                $('#work_img').animate({marginLeft: 0});
+                $('#work_img').stop().animate({marginLeft: 0});
                 $('.first').css('background-color', '#23222a');
                 $('.second').css('background-color', '#cacaca');
             });
     
             $('.fa-angle-right, .second').click(function(){
-                $('#work_img').animate({marginLeft: -halfWidth});
+                $('#work_img').stop().animate({marginLeft: -halfWidth});
                 $('.first').css('background-color', '#cacaca');
                 $('.second').css('background-color', '#23222a');
             });
@@ -76,13 +76,13 @@ $('.fa-xmark').click(function(){
         var halfWidth = fullWidth / 2;
 
         $('.fa-angle-left, .first').click(function(){
-            $('#work_img').animate({marginLeft: 0});
+            $('#work_img').stop().animate({marginLeft: 0});
             $('.first').css('background-color', '#23222a');
             $('.second').css('background-color', '#cacaca');
         });
 
         $('.fa-angle-right, .second').click(function(){
-            $('#work_img').animate({marginLeft: -halfWidth});
+            $('#work_img').stop().animate({marginLeft: -halfWidth});
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
@@ -93,13 +93,13 @@ $('.fa-xmark').click(function(){
         var halfWidth = fullWidth / 2;
 
         $('.fa-angle-left, .first').click(function(){
-            $('#work_img').animate({marginLeft: 0});
+            $('#work_img').stop().animate({marginLeft: 0});
             $('.first').css('background-color', '#23222a');
             $('.second').css('background-color', '#cacaca');
         });
 
         $('.fa-angle-right, .second').click(function(){
-            $('#work_img').animate({marginLeft: -halfWidth});
+            $('#work_img').stop().animate({marginLeft: -halfWidth});
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });

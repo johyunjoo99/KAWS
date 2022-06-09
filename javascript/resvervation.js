@@ -1,5 +1,18 @@
 $(function(){
 
+    //메뉴 슬라이딩
+    $('.fa-bars').click(function(){
+        $('#header_box nav').slideToggle();
+    });
+
+    $(window).resize(function(){
+        if(window.innerWidth > 1280){
+            $('#big_nav').css('display', 'flex');
+        } else {
+            $('#big_nav').hide();
+        }
+    });
+
     // 예약 마감시간까지 카운트다운
     var timer = new Date();
     var countDown = new Date(timer.getFullYear(), timer.getMonth(), timer.getDate(), 18, 00, 00);

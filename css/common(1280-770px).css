@@ -3,6 +3,8 @@ body{background-color: #5b5652;}
 ul, li, ol{list-style: none;}
 a{text-decoration: none;}
 
+
+
 @font-face {
     font-family: 'S-CoreDream-4Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
@@ -13,6 +15,8 @@ a{text-decoration: none;}
 
 
 @media(max-width: 1280px) and (min-width: 770px){
+
+html{overflow-x: hidden;}
 
 /* header */
 header{width: 100%; height: 84px; background-color: #5b5652;

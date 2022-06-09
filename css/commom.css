@@ -3,6 +3,8 @@ body{background-color: #5b5652;}
 ul, li, ol{list-style: none;}
 a{text-decoration: none;}
 
+#wrap{width: 100%; height: 100%;}
+
 @font-face {
     font-family: 'S-CoreDream-4Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
