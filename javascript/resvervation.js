@@ -75,33 +75,100 @@ $(function(){
 
 
     // 다른 제품 슬라이드
-    var page = 0;
 
-    $(".fa-angle-right").click(function(){
+    function slideResize(){
+        var page = 0;
 
-        page++;
+        if ( window.matchMedia('(min-width: 0px) and (max-width: 769px)').matches ) {
+            
+            var fullWidth = $("#other_img").width();
+            var slideWidth = fullWidth / 6;
 
-        $("#other_img").stop().animate({marginLeft: -384 * page});
+            $(".fa-angle-right").click(function(){
+        
+                page++;
+        
+                $("#other_img").stop().animate({marginLeft: -slideWidth * page});
+        
+                if(page > 5){
+            
+                    $("#other_img").stop().animate({marginLeft: 0});
+                }
+            });
+        
+            $(".fa-angle-left").click(function(){
+        
+                page--;
+        
+                $("#other_img").stop().animate({marginLeft: -slideWidth * page});
+        
+                if(page < 0){
+                    page = 0;
+        
+                    $("#other_img").stop().animate({marginLeft: 0});
+                }
+            });
 
-        if(page > 5){
-    
-            $("#other_img").stop().animate({marginLeft: 0});
+        } else if ( window.matchMedia('(min-width: 770px) and (max-width: 1280px)').matches ) {
+
+            var fullWidth = $("#other_img").width();
+            var slideWidth = fullWidth / 6;
+
+            $(".fa-angle-right").click(function(){
+        
+                page++;
+        
+                $("#other_img").stop().animate({marginLeft: -slideWidth * page});
+        
+                if(page > 5){
+            
+                    $("#other_img").stop().animate({marginLeft: 0});
+                }
+            });
+        
+            $(".fa-angle-left").click(function(){
+        
+                page--;
+        
+                $("#other_img").stop().animate({marginLeft: -slideWidth * page});
+        
+                if(page < 0){
+                    page = 0;
+        
+                    $("#other_img").stop().animate({marginLeft: 0});
+                }
+            });
+        } else {
+            $(".fa-angle-right").click(function(){
+        
+                page++;
+        
+                $("#other_img").stop().animate({marginLeft: -384 * page});
+        
+                if(page > 5){
+            
+                    $("#other_img").stop().animate({marginLeft: 0});
+                }
+            });
+        
+            $(".fa-angle-left").click(function(){
+        
+                page--;
+        
+                $("#other_img").stop().animate({marginLeft: -384 * page});
+        
+                if(page < 0){
+                    page = 0;
+        
+                    $("#other_img").stop().animate({marginLeft: 0});
+                }
+            });
         }
-    });
+    }
 
-    $(".fa-angle-left").click(function(){
+    window.addEventListener('resize', slideResize, false);
 
-        page--;
-
-        $("#other_img").stop().animate({marginLeft: -384 * page});
-
-        if(page < 0){
-            page = 0;
-
-            $("#other_img").stop().animate({marginLeft: 0});
-        }
-    });
-
+    slideResize();
 
     // 영역 나타나는 효과
 

@@ -53,80 +53,57 @@ $('.fa-xmark').click(function(){
 
 
 // 작품 슬라이드
-
     function slideResize(){
         if(window.matchMedia(" (min-width: 0px) and (max-width: 769px)").matches){
-            $('.fa-angle-left').click(function(){
-            $('#work_img').animate({marginLeft: 0});
-            $('.first').css('background-color', '#23222a');
-            $('.second').css('background-color', '#cacaca');
-        });
 
-        $('.fa-angle-right').click(function(){
-            $('#work_img').animate({marginLeft: "-71.5vw"});
-            $('.first').css('background-color', '#cacaca');
-            $('.second').css('background-color', '#23222a');
-        });
-
-        $('.first').click(function(){
-            $('#work_img').animate({marginLeft: 0});
-            $('.first').css('background-color', '#23222a');
-            $('.second').css('background-color', '#cacaca'); 
-        });
-
-        $('.second').click(function(){
-            $('#work_img').animate({marginLeft: "-71.5vw"});
-            $('.first').css('background-color', '#cacaca');
-            $('.second').css('background-color', '#23222a');
-        });
+            var fullWidth = $("#work_img").width();
+            var halfWidth = fullWidth / 2;
+    
+            $('.fa-angle-left, .first').click(function(){
+                $('#work_img').animate({marginLeft: 0});
+                $('.first').css('background-color', '#23222a');
+                $('.second').css('background-color', '#cacaca');
+            });
+    
+            $('.fa-angle-right, .second').click(function(){
+                $('#work_img').animate({marginLeft: -halfWidth});
+                $('.first').css('background-color', '#cacaca');
+                $('.second').css('background-color', '#23222a');
+            });
     } else if(window.matchMedia("(min-width: 770px) and (max-width: 1280px)").matches){
-        $('.fa-angle-left').click(function(){
+
+        var fullWidth = $("#work_img").width();
+        var halfWidth = fullWidth / 2;
+
+        $('.fa-angle-left, .first').click(function(){
             $('#work_img').animate({marginLeft: 0});
             $('.first').css('background-color', '#23222a');
             $('.second').css('background-color', '#cacaca');
         });
 
-        $('.fa-angle-right').click(function(){
-            $('#work_img').animate({marginLeft: "-83.5vw"});
+        $('.fa-angle-right, .second').click(function(){
+            $('#work_img').animate({marginLeft: -halfWidth});
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
 
-        $('.first').click(function(){
-            $('#work_img').animate({marginLeft: 0});
-            $('.first').css('background-color', '#23222a');
-            $('.second').css('background-color', '#cacaca'); 
-        });
-
-        $('.second').click(function(){
-            $('#work_img').animate({marginLeft: "-83.5vw"});
-            $('.first').css('background-color', '#cacaca');
-            $('.second').css('background-color', '#23222a');
-        });
     } else{
-        $('.fa-angle-left').click(function(){
+
+        var fullWidth = $("#work_img").width();
+        var halfWidth = fullWidth / 2;
+
+        $('.fa-angle-left, .first').click(function(){
             $('#work_img').animate({marginLeft: 0});
             $('.first').css('background-color', '#23222a');
             $('.second').css('background-color', '#cacaca');
         });
 
-        $('.fa-angle-right').click(function(){
-            $('#work_img').animate({marginLeft: -1068});
+        $('.fa-angle-right, .second').click(function(){
+            $('#work_img').animate({marginLeft: -halfWidth});
             $('.first').css('background-color', '#cacaca');
             $('.second').css('background-color', '#23222a');
         });
-
-        $('.first').click(function(){
-            $('#work_img').animate({marginLeft: 0});
-            $('.first').css('background-color', '#23222a');
-            $('.second').css('background-color', '#cacaca'); 
-        });
-
-        $('.second').click(function(){
-            $('#work_img').animate({marginLeft: -1068});
-            $('.first').css('background-color', '#cacaca');
-            $('.second').css('background-color', '#23222a');
-        });
+        
     }
 
 }

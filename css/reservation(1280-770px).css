@@ -70,7 +70,7 @@
              display: flex; flex-direction: column;
              justify-content: space-around; align-items: flex-start;}
 
-#infomation{width: 45vw; height: 20vw;}
+#infomation{width: 45vw; height: 23vw;}
 
 #slider_container h4{font-family: "GmarketSansMedium"; font-size: 1.5vw;
                      color: #fff;}
@@ -80,7 +80,7 @@
 
 
 /* 가격 & 알림설정 */
-#price{width: 27vw; height: 6vw;
+#price{width: 27vw; height: 5vw;
        display: flex; justify-content: space-around;
        align-items: flex-start;}
 #price span{font-family: 'GmarketSansMedium'; font-size: 3.5vw;
