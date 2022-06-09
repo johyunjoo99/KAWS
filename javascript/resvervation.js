@@ -106,6 +106,7 @@ $(function(){
                 if(page > 5){
             
                     $("#other_img").stop().animate({marginLeft: 0});
+
                 }
             });
         
@@ -116,9 +117,11 @@ $(function(){
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
                 if(page < 0){
-                    page = 0;
+                    
         
                     $("#other_img").stop().animate({marginLeft: 0});
+                    
+                    page = 0;
                 }
             });
 
@@ -161,7 +164,8 @@ $(function(){
                 if(page > 5){
             
                     $("#other_img").stop().animate({marginLeft: 0});
-                }
+
+                } 
             });
         
             $(".fa-angle-left").click(function(){
@@ -171,6 +175,7 @@ $(function(){
                 $("#other_img").stop().animate({marginLeft: -384 * page});
         
                 if(page < 0){
+
                     page = 0;
         
                     $("#other_img").stop().animate({marginLeft: 0});
