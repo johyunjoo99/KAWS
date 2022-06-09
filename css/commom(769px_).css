@@ -26,7 +26,7 @@ header{width: 100%; height: 84px; background-color: #5b5652;
          align-items: center; box-sizing: border-box;
          border-bottom: 1.5px solid #cabead;}
 
-#header_box i {display: block; color: #eaeaed; font-size: 8vw;}
+#header_box i {display: block; color: #eaeaed; font-size: 5.5vw;}
 
 #small_nav >  a img{width: 80%;}
 

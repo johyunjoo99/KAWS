@@ -165,14 +165,14 @@
           position: relative;}
 
 #work_slider i{font-size: 3vw; color: #fff;
-               padding: 1.5vw 2.5vw; border-radius: 60px;
+               padding: 1.7vw 2.5vw; border-radius: 60px;
                background-color: rgba(202, 190, 173, 0.5);
                opacity: 0; transform: scale(1.5);
                transition: all 0.5s;}
 #work_slider .fa-angle-left{position: absolute; 
-                            top:28%; left: 0; margin-left: 5%;}
+                            top:28%; left: 0; margin-left: 4%;}
 #work_slider .fa-angle-right{position: absolute; 
-                             top: 28%; right: 0; margin-right: 5%;}
+                             top: 28%; right: 0; margin-right: 4%;}
 
 #work_slider > i:hover{background-color: rgba(202, 190, 173, 0.8); 
                        transition: all 0.3s ease;

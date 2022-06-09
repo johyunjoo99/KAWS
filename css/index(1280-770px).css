@@ -161,7 +161,7 @@
           position: relative;}
 
 #work_slider i{font-size: 3vw; color: #fff;
-               padding: 1.5vw 2.5vw; border-radius: 60px;
+               padding: 1.5vw 2.3vw; border-radius: 60px;
                background-color: rgba(202, 190, 173, 0.5);
                opacity: 0; transform: scale(1.5);
                transition: all 0.5s;}

@@ -124,9 +124,9 @@ html{overflow-x: hidden;}
 
 
 /* 고객 정보 입력란 */
-#form_info{width: 90%; height: 80vw;
+#form_info{width: 90%; height: 90vw;
            background-color: #23222a;
-           border-radius: 2.3vw;
+           border-radius: 5vw;
            box-shadow: 0 1.5vw 2vw #44403a;
            opacity: 0; transform: scale(1.2);
            transition: all 0.5s;
@@ -134,9 +134,9 @@ html{overflow-x: hidden;}
 
 #form_info h2{font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
               font-size: 4.5vw; text-align: center;
-              padding: 3vw 0 0 0;}
+              padding: 5.5vw 0 0 0;}
 
-#form_info form{width: 100%; height: 80%; margin: 0 auto;
+#form_info form{width: 100%; height: 75%; margin: 0 auto;
                 display: flex; flex-direction: column;
                 justify-content: space-between; align-items: center;
                 padding-top: 1%;}
@@ -151,7 +151,7 @@ html{overflow-x: hidden;}
          justify-content: space-between; align-items: center;}
 
 .name_id label{margin-bottom: 0.4vw;}
-.name_id input{width: 33vw; height: 4.5vw; border-radius: 0.8vw;
+.name_id input{width: 33vw; height: 4.5vw; border-radius: 1.5vw;
                border: 1px solid #23222a; 
                font-family: 'NEXON Lv1 Gothic OTF';
                font-size: 2vw; padding: 1.2vw 0 1.2vw 1vw;}
@@ -159,7 +159,7 @@ html{overflow-x: hidden;}
 
 /* 배송지 */
 .destination{width: 85%; height: 25%;}
-.destination textarea{width: 98%; height: 7.5vw; border-radius: 0.8vw;
+.destination textarea{width: 98%; height: 7.5vw; border-radius: 1.5vw;
                       border: 1px solid #23222a; 
                       font-family: 'NEXON Lv1 Gothic OTF';
                       font-size: 2vw; padding: 1.2vw 0 1.2vw 1vw;}
@@ -169,7 +169,7 @@ html{overflow-x: hidden;}
 /* 구매 수량 */
 .quantity{width: 85%; height: 10%;}
 .quantity label{margin-right: 0.4vw;}
-.quantity select{padding: 1vw 4vw; border-radius: 0.8vw;
+.quantity select{padding: 1vw 4vw; border-radius: 1.5vw;
                  border: 1px solid #23222a;
                  font-family: 'NEXON Lv1 Gothic OTF'; font-size: 2.5vw;}
 .quantity select:focus{outline: none; border: 2px solid #cabead;}
@@ -219,7 +219,7 @@ html{overflow-x: hidden;}
 
 /* 제출 버튼 */
 input[type="submit"]{width: 85%; height: 12%;
-                     border: none; border-radius: 0.8vw;
+                     border: none; border-radius: 1.5vw;
                      background-color: #cabead; font-size: 3vw;
                      font-family: 'NEXON Lv1 Gothic OTF'; color: #fff;
                      margin-bottom: 2%;}
