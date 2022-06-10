@@ -87,26 +87,24 @@ $(function(){
     });
 
 
-    // 다른 제품 슬라이드
+// 다른 제품 슬라이드
 
     function slideResize(){
-        var page = 0;
 
         if ( window.matchMedia('(min-width: 0px) and (max-width: 769px)').matches ) {
             
+            var page = 0;
             var fullWidth = $("#other_img").width();
             var slideWidth = fullWidth / 6;
-
-            $(".fa-angle-right").click(function(){
         
+            $(".fa-angle-right").click(function(){
+                
                 page++;
         
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
-                if(page > 5){
-            
-                    $("#other_img").stop().animate({marginLeft: 0});
-
+                if(page > 4){
+                    page = 0;
                 }
             });
         
@@ -117,28 +115,28 @@ $(function(){
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
                 if(page < 0){
-                    
+        
+                    page = 0;
         
                     $("#other_img").stop().animate({marginLeft: 0});
-                    
-                    page = 0;
+        
                 }
             });
 
         } else if ( window.matchMedia('(min-width: 770px) and (max-width: 1280px)').matches ) {
 
+            var page = 0;
             var fullWidth = $("#other_img").width();
             var slideWidth = fullWidth / 6;
-
-            $(".fa-angle-right").click(function(){
         
+            $(".fa-angle-right").click(function(){
+                
                 page++;
         
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
-                if(page > 5){
-            
-                    $("#other_img").stop().animate({marginLeft: 0});
+                if(page > 4){
+                    page = 0;
                 }
             });
         
@@ -149,36 +147,41 @@ $(function(){
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
                 if(page < 0){
+        
                     page = 0;
         
                     $("#other_img").stop().animate({marginLeft: 0});
+        
                 }
             });
         } else {
-            $(".fa-angle-right").click(function(){
+            var page = 0;
+            var fullWidth = $("#other_img").width();
+            var slideWidth = fullWidth / 6;
         
+            $(".fa-angle-right").click(function(){
+                
                 page++;
         
-                $("#other_img").stop().animate({marginLeft: -384 * page});
+                $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
-                if(page > 5){
-            
-                    $("#other_img").stop().animate({marginLeft: 0});
-
-                } 
+                if(page > 4){
+                    page = 0;
+                }
             });
         
             $(".fa-angle-left").click(function(){
         
                 page--;
         
-                $("#other_img").stop().animate({marginLeft: -384 * page});
+                $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
                 if(page < 0){
-
+        
                     page = 0;
         
                     $("#other_img").stop().animate({marginLeft: 0});
+        
                 }
             });
         }
