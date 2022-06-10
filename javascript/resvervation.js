@@ -104,7 +104,7 @@ $(function(){
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
                 if(page > 4){
-                    page = 0;
+                    page = -1;
                 }
             });
         
@@ -136,7 +136,7 @@ $(function(){
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
                 if(page > 4){
-                    page = 0;
+                    page = -1;
                 }
             });
         
@@ -166,7 +166,7 @@ $(function(){
                 $("#other_img").stop().animate({marginLeft: -slideWidth * page});
         
                 if(page > 4){
-                    page = 0;
+                    page = -1;
                 }
             });
         
