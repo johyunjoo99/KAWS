@@ -32,10 +32,12 @@ setInterval(slide, 300);
 // 팝업 비디오
 $('.fa-play').click(function(){
     $('#myModal').fadeIn(250);
+    $(".iframe iframe").attr("src", "https://www.youtube.com/embed/eSOb8jWw2v0");
 });
 
 $('.fa-xmark').click(function(){
     $('#myModal').fadeOut(250);
+    $(".iframe iframe").attr("src", "");
 });
 
 
